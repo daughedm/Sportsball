@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
+import Login from '../Login/Login'
 
-import Navigation from './Navigation';
 
 const App = () =>
   < Router >
-  < LoginPage />
+    < Login />
   </Router>
 
 export default App;
