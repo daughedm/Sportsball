@@ -29,3 +29,5 @@ export const boxScoreFetch = async () => {
     throw error;
   }
 };  
+
+export default { gameSummaryFetch, boxScoreFetch }
