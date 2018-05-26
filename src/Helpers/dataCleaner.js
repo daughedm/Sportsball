@@ -1,9 +1,20 @@
 const yesterdaysDate = () => {
-  let todayTimeStamp = new Date; 
+  let todayTimeStamp = new Date;
   let oneDayTimeStamp = 1000 * 60 * 60 * 24;
   let diff = todayTimeStamp - oneDayTimeStamp;
   let yesterdayDate = new Date(diff);
-  let yesterdayString = yesterdayDate.getFullYear() + '/' + (yesterdayDate.getMonth() + 1) + '/' + yesterdayDate.getDate();
+  let year = yesterdayDate.getFullYear()
+  let month = yesterdayDate.getMonth() + 1;
+  let day = yesterdayDate.getDate();
+
+  if (month < 10) {
+    month = '0' + month;
+  }
+  if (day < 10) {
+    day = '0' + day;
+  }
+
+  let yesterdayString = year + '/' + month + '/' + day;
   return yesterdayString;
 }
 
