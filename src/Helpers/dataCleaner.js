@@ -1,3 +1,12 @@
+export const yesterdaysDate = () => {
+  let todayTimeStamp = new Date; 
+  let oneDayTimeStamp = 1000 * 60 * 60 * 24;
+  let diff = todayTimeStamp - oneDayTimeStamp;
+  let yesterdayDate = new Date(diff);
+  let yesterdayString = yesterdayDate.getFullYear() + '/' + (yesterdayDate.getMonth() + 1) + '/' + yesterdayDate.getDate();
+  return yesterdayString;
+}
+
 const fatCutter = mlbdata.league.games.map(ballGame => {
   return {
     homeTeam: ballGame.game.home.name,
