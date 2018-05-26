@@ -18,26 +18,29 @@ const yesterdaysDate = () => {
   return yesterdayString;
 }
 
-// const fatCutter = mlbdata.league.games.map(ballGame => {
-//   return {
-//     homeTeam: ballGame.game.home.name,
-//     awayTeam: ballGame.game.away.name,
-//     homeTeamRuns: ballGame.game.home.runs,
-//     awayTeamRuns: ballGame.game.away.runs,
-//     winningTeam: ballGame.game.home.runs > ballGame.game.away.runs ? ballGame.game.home.name : ballGame.game.away.name,
-//     losingTeam: ballGame.game.home.runs < ballGame.game.away.runs ? ballGame.game.home.name : ballGame.game.away.name
-//   }
-// })
+const gameSummaryCleaner = (rawSummaryData) => {
+  const cleanedSummary = rawSummaryData.league.games.map(ballGame => {
+    return {
+      homeTeam: ballGame.game.home.name,
+      awayTeam: ballGame.game.away.name,
+      homeTeamRuns: ballGame.game.home.runs,
+      awayTeamRuns: ballGame.game.away.runs,
+      winningTeam: ballGame.game.home.runs > ballGame.game.away.runs ? ballGame.game.home.name : ballGame.game.away.name,
+      losingTeam: ballGame.game.home.runs < ballGame.game.away.runs ? ballGame.game.home.name : ballGame.game.away.name
+    }
+  })
+  return cleanedSummary;
+}
 
 
-// const findGame = (yourTeam) => {
-//   const singleGame = fatCutter.find(ballGame => {
-//     if (ballGame.homeTeam.includes(yourTeam) || ballGame.awayTeam.includes(yourTeam)) {
-//       return true;
-//     }
-//   })
-//   return singleGame;
-// }
+const findGame = (yourTeam) => {
+  const singleGame = gameSummaryCleaner.find(ballGame => {
+    if (ballGame.homeTeam.includes(yourTeam) || ballGame.awayTeam.includes(yourTeam)) {
+      return true;
+    }
+  })
+  return singleGame;
+}
 
 // const winningMessages = (yourTeam, score) => {
 //   return [`Wow, that game was sick! I can’t believe ${yourTeam} won ${score}!`, `BAM, that game was sick! I can’t believe ${yourTeam} won ${score}!`, `SWEET, that game was sick! I can’t believe ${yourTeam} won ${score}!`, `Chill, that game was sick! I can’t believe ${yourTeam} won ${score}!`, `Damn, that game was sick! I can’t believe ${yourTeam} won ${score}!`]
