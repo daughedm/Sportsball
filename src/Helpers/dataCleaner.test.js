@@ -19,16 +19,3 @@ const findGame = (yourTeam) => {
   return singleGame;
 }
 
-console.log(findGame('Astros'))
-
-let score = `${fatCutter[0].homeTeamRuns} - ${fatCutter[0].awayTeamRuns}`;
-
-
-
-
-const winningMessages = [`Wow, that game was sick! I can’t believe they won ${score}!`, `BAM, that game was sick! I can’t believe they won ${score}!`, `SWEET, that game was sick! I can’t believe they won ${score}!`, `Chill, that game was sick! I can’t believe they won ${score}!`, `Damn, that game was sick! I can’t believe they won ${score}!`]
-
-const randomMessage = () => {
-  const randNum = Math.floor(Math.random() * winningMessages.length);
-  return winningMessages[randNum];
-}
