@@ -1,10 +1,9 @@
 import apiKey from './apiKey';
-import yesterdaysDate from '../Helpers/dataCleaner'
+import { yesterdaysDate } from '../Helpers/dataCleaner';
 
-export const gameSummaryFetch = async () => {
+const gameSummaryFetch = async () => {
   const date = yesterdaysDate();
-  const url = `http://api.sportradar.us/mlb/trial/v6.5/en/games/${date}/summary.json?
-  api_key=${apiKey}`;
+  const url = `http://api.sportradar.us/mlb/trial/v6.5/en/games/${date}/summary.json?api_key=${apiKey}`;
   
   try{
     const response = await fetch(url);
@@ -16,11 +15,11 @@ export const gameSummaryFetch = async () => {
   }
 };
 
-export const boxScoreFetch = async () => {
-  const date = yesterDaysDate();
+const boxScoreFetch = async () => {
+  const date = yesterdaysDate();
   const url = `http://api.sportradar.us/mlb/trial/v6.5/en/games/${date}/boxscore.json?api_key=${apiKey}`;
 
-  try{
+  try{  
     const response = await fetch(url);
     const mlbBoxScores = await response.json();
     return mlbBoxScores;
@@ -30,4 +29,4 @@ export const boxScoreFetch = async () => {
   }
 };  
 
-export default { gameSummaryFetch, boxScoreFetch }
+export { gameSummaryFetch, boxScoreFetch }
