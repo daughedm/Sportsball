@@ -48,7 +48,7 @@ export class SignUp extends Component {
         <button
           className = "submit-button"
           type = "submit" >
-         login 
+         sign up 
         </button> 
         <a 
           className = "anchor-toggle" > Already a user? Login. 
