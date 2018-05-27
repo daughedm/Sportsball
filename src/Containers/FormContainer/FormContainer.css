@@ -1,0 +1,10 @@
+.form-container {
+  margin: auto;
+  width: 75%;
+}
+
+.sportsball-logo {
+  width: 500px;
+  margin:150px auto 40px auto;
+  display: block;
+}

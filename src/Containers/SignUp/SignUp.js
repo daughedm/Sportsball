@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 
 export class SignUp extends Component {
   constructor(props) {
+    super();
     
     this.state = {
       userName: '',

@@ -13,13 +13,19 @@ export class Login extends Component {
 
   }
   
+  handleChange = (event) => {
+    const {name, value} = event.target
+    this.setState({
+      [name]: value
+    })
+  }
 
   render() {
     return (
       <form>
         <h3>Login</h3>
-        <input type="text"/>
-        <input type ="text"/>
+        <input type="text" onChange={this.handleChange}/>
+        <input type ="text" onChange={this.handleChange}/>
         <input type ="submit"/>
       </form>
     )
