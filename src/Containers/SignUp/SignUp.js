@@ -13,9 +13,12 @@ export class SignUp extends Component {
 
   render() {
     return ( 
-      <div >
-
-      </div>
+    <form>
+      <h3>Login</h3> 
+        <input type = "text" />
+        <input type = "text" />
+        <input type = "submit" />
+      </form>
     )
   }
 }
