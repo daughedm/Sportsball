@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { connect } from 'react-redux'
+import './SignUp.css';
 
 export class SignUp extends Component {
   constructor(props) {
@@ -12,13 +13,46 @@ export class SignUp extends Component {
     }
   }
 
+    handleChange = (event) => {
+      const {name, value} = event.target
+      this.setState({
+        [name]: value
+      })
+    }
+
   render() {
     return ( 
-    <form>
-      <h3>Login</h3> 
-        <input type = "text" />
-        <input type = "text" />
-        <input type = "submit" />
+      <form
+        className = "login-form"
+        type = "submit"
+        onSubmit = "####" 
+      >
+        <h3
+          className = "form-header" > Sign Up </h3> 
+        <input
+          className = "input-field"
+          type = "text"
+          onChange = {this.handleChange}
+          name = "userName"
+          value = {this.state.userName}
+          placeholder = "username" 
+        />
+        <input
+          className = "input-field"
+          type = "password"
+          onChange = {this.handleChange}
+          name = "password"
+          value = {this.state.password}
+          placeholder = "password" 
+        />
+        <button
+          className = "submit-button"
+          type = "submit" >
+         login 
+        </button> 
+        <a 
+          className = "anchor-toggle" > Already a user? Login. 
+        </a> 
       </form>
     )
   }
