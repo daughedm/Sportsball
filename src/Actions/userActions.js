@@ -12,7 +12,16 @@ const removeUserFromStore = (user) => {
   }
 }
 
+const addSeletectedTeamToStore = (team) => {
+  return {
+    type: 'ADD_SELECTED_TEAM',
+    team: team
+  }
+}
+
 export {
   addUserToStore,
-  removeUserFromStore
+  removeUserFromStore,
+  addSeletectedTeamToStore
+  
 }

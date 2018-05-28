@@ -1,11 +1,50 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import Login from '../Login/Login'
+import { Route, Redirect, Switch, withRouter } from 'react-router-dom';
+import { connect } from 'react-redux';
 import FormContainer from '../FormContainer/FormContainer';
+import Main from '../Main/Main';
+import { gameSummariesFetch, boxScoresFetch } from '../../ApiCall/ApiCall';
+import {gameSummaryCleaner, boxScoresCleaner} from '../../Helpers/dataCleaner';
+import {addSummariesToStore, addBoxScoresToStore} from '../../Actions/mlbDataActions';
 
-const App = () =>
-  < Router >
-    < FormContainer />
-  </Router>
+export class App extends Component {
+  
+  componentDidMount() {
+    this.getData()
+  }
 
-export default App;
+  async getSummaries() {
+    const fullSummaries = await gameSummariesFetch();
+    const cleanedSummaries = gameSummaryCleaner(fullSummaries);
+    this.props.handleSummaries(cleanedSummaries);
+  }
+
+  async getBoxScores() {
+    const fullBoxScores = await boxScoresFetch();
+    const cleanedBoxScores = boxScoresCleaner(fullBoxScores);
+    this.props.handleBoxScores(cleanedBoxScores);
+  }
+
+  getData() {
+    this.getSummaries();
+    this.getBoxScores();
+  }
+
+  render() { 
+    return (
+      < Router >
+        < FormContainer />
+      </Router>
+    );
+  }
+}
+
+export const mapDispatchToProps = (dispatch) => ({
+  handleSummaries: (summaries) => 
+    dispatch(addSummariesToStore(summaries)),
+  handleBoxScores: (boxScores) =>
+    dispatch(addBoxScoresToStore(boxScores))
+});
+
+export default withRouter(connect(null, mapDispatchToProps)(App));

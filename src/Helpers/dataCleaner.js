@@ -1,7 +1,7 @@
 import * as prases from './talkingPointPhrases';
 
 const yesterdaysDate = () => {
-  let todayTimeStamp = new Date;
+  let todayTimeStamp = new Date();
   let oneDayTimeStamp = 1000 * 60 * 60 * 24;
   let diff = todayTimeStamp - oneDayTimeStamp;
   let yesterdayDate = new Date(diff);
@@ -34,36 +34,49 @@ const gameSummaryCleaner = (rawSummaryData) => {
   return cleanedSummary;
 }
 
-const findGame = (yourTeam) => {
-  const singleGame = gameSummaryCleaner.find(ballGame => {
-    if (ballGame.homeTeam.includes(yourTeam) || ballGame.awayTeam.includes(yourTeam)) {
-      return true;
+const boxScoresCleaner = (rawBoxScoresData) => {
+  const cleanedBoxScores = rawBoxScoresData.league.games.map(ballgame => {
+    return {
+      homeTeam: ballgame.game.home.name,
+      awayTeam: ballgame.game.away.name,
+      homeTeamEvents: ballgame.game.home.events,
+      awayTeamEvents: ballgame.game.home.events
     }
   })
+  return cleanedBoxScores;
+} 
+
+const findGame = (yourTeam, path) => {
+  let singleGame = path.find(ballGame => {
+    return ballGame.homeTeam.includes(yourTeam) || ballGame.awayTeam.includes(yourTeam)
+  })
+  if (singleGame === undefined) {
+    singleGame = `The ${yourTeam} didn't play!`
+  }
   return singleGame;
 }
 
-const firstTalkingPoint = (yourTeam) => {
-  const teamsGame = findGame(yourTeam);
-  let score = `${teamsGame.homeTeamRuns} - ${teamsGame.awayTeamRuns}`;
-  let randNum;
-  let message;
+// const firstTalkingPoint = (yourTeam) => {
+//   const teamsGame = findGame(yourTeam);
+//   let score = `${teamsGame.homeTeamRuns} - ${teamsGame.awayTeamRuns}`;
+//   let randNum;
+//   let message;
 
-  if (teamsGame.winningTeam === yourTeam) {
-    randNum = Math.floor(Math.random() * winningMessages(yourTeam, score).length);
-    console.log(randNum)
-    message = winningMessages(yourTeam, score)[randNum];
-  } else if (teamsGame.winningTeam !== yourTeam && teamsGame.winningTeam !== undefined) {
-    randNum = Math.floor(Math.random() * losingMessages(yourTeam, score).length);
-    message = losingMessages(yourTeam, score)[randNum];
-  } else {
-    message = `The ${yourTeam} didn't play today!`;
-  }
-  return message;
-}
+//   if (teamsGame.winningTeam === yourTeam) {
+//     randNum = Math.floor(Math.random() * winningMessages(yourTeam, score).length);
+//     console.log(randNum)
+//     message = winningMessages(yourTeam, score)[randNum];
+//   } else if (teamsGame.winningTeam !== yourTeam && teamsGame.winningTeam !== undefined) {
+//     randNum = Math.floor(Math.random() * losingMessages(yourTeam, score).length);
+//     message = losingMessages(yourTeam, score)[randNum];
+//   } else {
+//     message = `The ${yourTeam} didn't play today!`;
+//   }
+//   return message;
+// }
 
 export { 
   yesterdaysDate,
   gameSummaryCleaner,
-  findGame 
+  boxScoresCleaner
 };

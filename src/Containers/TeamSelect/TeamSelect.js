@@ -14,7 +14,7 @@ export class TeamSelect extends Component {
 
     handleTeamClick = (event) => {
       this.setState({
-        team: event.target.value
+        team: event.target.id
       })
     }
 
@@ -26,37 +26,37 @@ export class TeamSelect extends Component {
         onSubmit = "####" 
       >
         <h3 className = "form-header" > Select Your Team </h3> 
-           <ul class="dropdown-menu scrollable-menu" role="menu">
-            <li><a href="#">Arizona Diamondbacks</a></li>
-            <li><a href="#">Atlanta Braves</a></li>
-            <li><a href="#">Baltimore Orioles</a></li>
-            <li><a href="#">Boston Red Sox</a></li>
-            <li><a href="#">Chicago Cubs</a></li>
-            <li><a href="#">Chicago White Sox</a></li>
-            <li><a href="#">Cincinnati Reds</a></li>
-            <li><a href="#">Cleveland Indians</a></li>
-            <li><a href="#">Colorado Rockies</a></li>
-            <li><a href="#">Detroit Tigers</a></li>
-            <li><a href="#">Houston Astros</a></li>
-            <li><a href="#">Kansas City Royals</a></li>
-            <li><a href="#">LA Angels of Anaheim</a></li>
-            <li><a href="#">Los Angeles Dodgers</a></li>
-            <li><a href="#">Miami Marlins</a></li>
-            <li><a href="#">Milwaukee Brewers</a></li>
-            <li><a href="#">Minnesota Twins</a></li>
-            <li><a href="#">New York Mets</a></li>
-            <li><a href="#">New York Yankees</a></li>
-            <li><a href="#">Oakland Athletics</a></li>
-            <li><a href="#">Philadelphia Phillies</a></li>
-            <li><a href="#">Pittsburgh Pirates</a></li>
-            <li><a href="#">San Diego Padres</a></li>
-            <li><a href="#">San Francisco Giants</a></li>
-            <li><a href="#">Seattle Mariners</a></li>
-            <li><a href="#">St. Louis Cardinals</a></li>
-            <li><a href="#">Tampa Bay Rays</a></li>
-            <li><a href="#">Texas Rangers</a></li>
-            <li><a href="#">Toronto Blue Jays</a></li>
-            <li><a href="#">Washington Nationals</a></li>
+           <ul className="dropdown-menu scrollable-menu" role="menu">
+            <li onClick={this.handleTeamClick} id={"Diamondbacks"}>Arizona Diamondbacks</li>
+            <li onClick={this.handleTeamClick} id="Braves">Atlanta Braves</li>
+            <li onClick={this.handleTeamClick} id="Orioles">Baltimore Orioles</li>
+            <li onClick={this.handleTeamClick} id="Red Sox">Boston Red Sox</li>
+            <li onClick={this.handleTeamClick} id="Cubs">Chicago Cubs</li>
+            <li onClick={this.handleTeamClick} id="White Sox">Chicago White Sox</li>
+            <li onClick={this.handleTeamClick} id="Reds">Cincinnati Reds</li>
+            <li onClick={this.handleTeamClick} id="Indians">Cleveland Indians</li>
+            <li onClick={this.handleTeamClick} id="Rockies">Colorado Rockies</li>
+            <li onClick={this.handleTeamClick} id="Tigers">Detroit Tigers</li>
+            <li onClick={this.handleTeamClick} id="Astros">Houston Astros</li>
+            <li onClick={this.handleTeamClick} id="Royals">Kansas City Royals</li>
+            <li onClick={this.handleTeamClick} id="Angels">LA Angels of Anaheim</li>
+            <li onClick={this.handleTeamClick} id="Dodgers">Los Angeles Dodgers</li>
+            <li onClick={this.handleTeamClick} id="Marlins">Miami Marlins</li>
+            <li onClick={this.handleTeamClick} id="Brewers">Milwaukee Brewers</li>
+            <li onClick={this.handleTeamClick} id="Twins">Minnesota Twins</li>
+            <li onClick={this.handleTeamClick} id="Mets">New York Mets</li>
+            <li onClick={this.handleTeamClick} id="Yankees">New York Yankees</li>
+            <li onClick={this.handleTeamClick} id="Athletics">Oakland Athletics</li>
+            <li onClick={this.handleTeamClick} id="Phillies">Philadelphia Phillies</li>
+            <li onClick={this.handleTeamClick} id="Pirates">Pittsburgh Pirates</li>
+            <li onClick={this.handleTeamClick} id="Padres">San Diego Padres</li>
+            <li onClick={this.handleTeamClick} id="Giants">San Francisco Giants</li>
+            <li onClick={this.handleTeamClick} id="Mariners">Seattle Mariners</li>
+            <li onClick={this.handleTeamClick} id="Cardinals">St. Louis Cardinals</li>
+            <li onClick={this.handleTeamClick} id="Rays">Tampa Bay Rays</li>
+            <li onClick={this.handleTeamClick} id="Rangers">Texas Rangers</li>
+            <li onClick={this.handleTeamClick} id="Blue Jays">Toronto Blue Jays</li>
+            <li onClick={this.handleTeamClick} id="Nationals">Washington Nationals</li>
           </ul>
         
         
