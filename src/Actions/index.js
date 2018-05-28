@@ -7,7 +7,8 @@ import {
 
 import {
   addUserToStore,
-  removeUserFromStore
+  removeUserFromStore,
+  addSeletectedTeamToStore
 } from './userActions';
 
 export {
@@ -16,5 +17,6 @@ export {
     removeBoxscoreFromStore,
     removeSummaryFromStore,
     addUserToStore,
-    removeUserFromStore
+    removeUserFromStore,
+    addSeletectedTeamToStore
 }

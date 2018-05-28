@@ -46,8 +46,8 @@ const boxScoresCleaner = (rawBoxScoresData) => {
   return cleanedBoxScores;
 } 
 
-const findGameSummary = (yourTeam) => {
-  let singleGame = cleanData.find(ballGame => {
+const findGame = (yourTeam, path) => {
+  let singleGame = path.find(ballGame => {
     return ballGame.homeTeam.includes(yourTeam) || ballGame.awayTeam.includes(yourTeam)
   })
   if (singleGame === undefined) {
@@ -55,23 +55,6 @@ const findGameSummary = (yourTeam) => {
   }
   return singleGame;
 }
-
-const findGameBoxScore = (yourTeam) => {
-  let singleGame = cleanData.find(ballGame => {
-    return ballGame.homeTeam.includes(yourTeam) || ballGame.awayTeam.includes(yourTeam)
-  })
-  if (singleGame === undefined) {
-    singleGame = `The ${yourTeam} didn't play!`
-  }
-  return singleGame;
-}
-
-// const findGame = (yourTeam) => {
-//   const singleGame = gameSummaryCleaner.find(ballGame => {
-//    return ballGame.homeTeam.includes(yourTeam) || ballGame.awayTeam.includes(yourTeam)
-//   })
-//   return singleGame;
-// }
 
 // const firstTalkingPoint = (yourTeam) => {
 //   const teamsGame = findGame(yourTeam);
