@@ -26,7 +26,7 @@ export class TeamSelect extends Component {
         onSubmit = "####" 
       >
         <h3 className = "form-header" > Select Your Team </h3> 
-           <ul class="dropdown-menu scrollable-menu" role="menu">
+           <ul className="dropdown-menu scrollable-menu" role="menu">
             <li><a href="#">Arizona Diamondbacks</a></li>
             <li><a href="#">Atlanta Braves</a></li>
             <li><a href="#">Baltimore Orioles</a></li>

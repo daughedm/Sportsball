@@ -1,4 +1,4 @@
-const gameSummariesReducer = (state = {}, action) => {
+const gameSummariesReducer = (state = [], action) => {
   switch (action.type) {
     case 'ADD_SUMMARIES':
       return action.summaries;

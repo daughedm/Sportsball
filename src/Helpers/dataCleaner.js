@@ -43,24 +43,24 @@ const findGame = (yourTeam) => {
   return singleGame;
 }
 
-const firstTalkingPoint = (yourTeam) => {
-  const teamsGame = findGame(yourTeam);
-  let score = `${teamsGame.homeTeamRuns} - ${teamsGame.awayTeamRuns}`;
-  let randNum;
-  let message;
+// const firstTalkingPoint = (yourTeam) => {
+//   const teamsGame = findGame(yourTeam);
+//   let score = `${teamsGame.homeTeamRuns} - ${teamsGame.awayTeamRuns}`;
+//   let randNum;
+//   let message;
 
-  if (teamsGame.winningTeam === yourTeam) {
-    randNum = Math.floor(Math.random() * winningMessages(yourTeam, score).length);
-    console.log(randNum)
-    message = winningMessages(yourTeam, score)[randNum];
-  } else if (teamsGame.winningTeam !== yourTeam && teamsGame.winningTeam !== undefined) {
-    randNum = Math.floor(Math.random() * losingMessages(yourTeam, score).length);
-    message = losingMessages(yourTeam, score)[randNum];
-  } else {
-    message = `The ${yourTeam} didn't play today!`;
-  }
-  return message;
-}
+//   if (teamsGame.winningTeam === yourTeam) {
+//     randNum = Math.floor(Math.random() * winningMessages(yourTeam, score).length);
+//     console.log(randNum)
+//     message = winningMessages(yourTeam, score)[randNum];
+//   } else if (teamsGame.winningTeam !== yourTeam && teamsGame.winningTeam !== undefined) {
+//     randNum = Math.floor(Math.random() * losingMessages(yourTeam, score).length);
+//     message = losingMessages(yourTeam, score)[randNum];
+//   } else {
+//     message = `The ${yourTeam} didn't play today!`;
+//   }
+//   return message;
+// }
 
 export { 
   yesterdaysDate,

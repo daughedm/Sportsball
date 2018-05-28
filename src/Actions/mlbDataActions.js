@@ -25,8 +25,8 @@ const removeBoxscoreFromStore = (boxscore) => {
 }
 
 export {
-  addSummaryToStore,
+  addSummariesToStore,
   addBoxScoreToStore,
   removeBoxscoreFromStore,
-  removeSummaryFromStore
+  removeSummariesFromStore
 }
