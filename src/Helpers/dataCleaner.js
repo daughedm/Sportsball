@@ -1,7 +1,7 @@
 import * as prases from './talkingPointPhrases';
 
 const yesterdaysDate = () => {
-  let todayTimeStamp = new Date;
+  let todayTimeStamp = new Date();
   let oneDayTimeStamp = 1000 * 60 * 60 * 24;
   let diff = todayTimeStamp - oneDayTimeStamp;
   let yesterdayDate = new Date(diff);
@@ -34,14 +34,44 @@ const gameSummaryCleaner = (rawSummaryData) => {
   return cleanedSummary;
 }
 
-const findGame = (yourTeam) => {
-  const singleGame = gameSummaryCleaner.find(ballGame => {
-    if (ballGame.homeTeam.includes(yourTeam) || ballGame.awayTeam.includes(yourTeam)) {
-      return true;
+const boxScoresCleaner = (rawBoxScoresData) => {
+  const cleanedBoxScores = rawBoxScoresData.league.games.map(ballgame => {
+    return {
+      homeTeam: ballgame.game.home.name,
+      awayTeam: ballgame.game.away.name,
+      homeTeamEvents: ballgame.game.home.events,
+      awayTeamEvents: ballgame.game.home.events
     }
   })
+  return cleanedBoxScores;
+} 
+
+const findGameSummary = (yourTeam) => {
+  let singleGame = cleanData.find(ballGame => {
+    return ballGame.homeTeam.includes(yourTeam) || ballGame.awayTeam.includes(yourTeam)
+  })
+  if (singleGame === undefined) {
+    singleGame = `The ${yourTeam} didn't play!`
+  }
   return singleGame;
 }
+
+const findGameBoxScore = (yourTeam) => {
+  let singleGame = cleanData.find(ballGame => {
+    return ballGame.homeTeam.includes(yourTeam) || ballGame.awayTeam.includes(yourTeam)
+  })
+  if (singleGame === undefined) {
+    singleGame = `The ${yourTeam} didn't play!`
+  }
+  return singleGame;
+}
+
+// const findGame = (yourTeam) => {
+//   const singleGame = gameSummaryCleaner.find(ballGame => {
+//    return ballGame.homeTeam.includes(yourTeam) || ballGame.awayTeam.includes(yourTeam)
+//   })
+//   return singleGame;
+// }
 
 // const firstTalkingPoint = (yourTeam) => {
 //   const teamsGame = findGame(yourTeam);
@@ -65,5 +95,5 @@ const findGame = (yourTeam) => {
 export { 
   yesterdaysDate,
   gameSummaryCleaner,
-  findGame 
+  boxScoresCleaner
 };

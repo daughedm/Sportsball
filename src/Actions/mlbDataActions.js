@@ -11,10 +11,10 @@ const removeSummariesFromStore = (summaries) => {
   }
 }
 
-const addBoxScoreToStore = (boxscore) => {
+const addBoxScoresToStore = (boxScores) => {
   return {
-    type: 'ADD_BOXSCORE',
-    boxscore: boxscore
+    type: 'ADD_BOXSCORES',
+    boxScores: boxScores
   }
 }
 
@@ -26,7 +26,7 @@ const removeBoxscoreFromStore = (boxscore) => {
 
 export {
   addSummariesToStore,
-  addBoxScoreToStore,
+  addBoxScoresToStore,
   removeBoxscoreFromStore,
   removeSummariesFromStore
 }
