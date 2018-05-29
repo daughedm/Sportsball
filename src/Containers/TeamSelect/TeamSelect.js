@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
+import { findGame } from '../../Helpers/dataCleaner'
 import { addSelectedTeamToStore } from '../../Actions/userActions';
 import './TeamSelect.css';
+import { addSingleSummaryToStore, addSingleBoxScoreToStore } from '../../Actions';
 
 export class TeamSelect extends Component {
   constructor(props) {
-    super();
+    super(props);
     
     this.state = {
       team: ''
@@ -21,7 +23,12 @@ export class TeamSelect extends Component {
 
   handleTeamSubmit = (event) => {
     event.preventDefault();
+    const singleBoxScore = findGame(this.state.team, this.props.boxScores);
+    const singleSummary = findGame(this.state.team, this.props.gameSummaries);
+
     this.props.handleTeamSelect(this.state.team);
+    this.props.handleBoxScore(singleBoxScore);
+    this.props.handleGameSummary(singleSummary);
   }
 
   render() {
@@ -76,12 +83,18 @@ export class TeamSelect extends Component {
 }
 
 const mapStateToProps = (state) => ({
-  team: state.team
+  selectedTeam: state.selectedTeam,
+  gameSummaries: state.gameSummaries,
+  boxScores: state.boxScores
 })
 
 export const mapDispatchToProps = (dispatch) => ({
   handleTeamSelect: (team) =>
-    dispatch(addSelectedTeamToStore(team))
+    dispatch(addSelectedTeamToStore(team)),
+  handleGameSummary: (summary) => 
+    dispatch(addSingleSummaryToStore(summary)),
+  handleBoxScore: (boxscore) => 
+    dispatch(addSingleBoxScoreToStore(boxscore))
 });
 
 TeamSelect.propTypes = {

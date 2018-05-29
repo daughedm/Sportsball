@@ -78,5 +78,6 @@ const findGame = (yourTeam, path) => {
 export { 
   yesterdaysDate,
   gameSummaryCleaner,
-  boxScoresCleaner
+  boxScoresCleaner,
+  findGame
 };
