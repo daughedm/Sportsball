@@ -1,4 +1,4 @@
-const selectedTeamReducer = (state = {}, action) => {
+const selectedTeamReducer = (state = '', action) => {
   switch (action.type) {
     case 'ADD_SELECTED_TEAM':
       return action.team;

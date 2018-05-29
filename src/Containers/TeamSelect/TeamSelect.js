@@ -1,6 +1,7 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { addSelectedTeamToStore } from '../../Actions/userActions';
 import './TeamSelect.css';
 
 export class TeamSelect extends Component {
@@ -8,22 +9,27 @@ export class TeamSelect extends Component {
     super();
     
     this.state = {
-      team: 'select your team'
+      team: ''
     }
   }
 
-    handleTeamClick = (event) => {
-      this.setState({
-        team: event.target.id
-      })
-    }
+  handleTeamClick = (event) => {
+    this.setState({
+      team: event.target.id
+    });
+  }
+
+  handleTeamSubmit = (event) => {
+    event.preventDefault();
+    this.props.handleTeamSelect(this.state.team);
+  }
 
   render() {
     return ( 
       <form
         className = "login-form"
         type = "submit"
-        onSubmit = "####" 
+        onSubmit={this.handleTeamSubmit} 
       >
         <h3 className = "form-header" > Select Your Team </h3> 
            <ul className="dropdown-menu scrollable-menu" role="menu">
@@ -58,11 +64,10 @@ export class TeamSelect extends Component {
             <li onClick={this.handleTeamClick} id="Blue Jays">Toronto Blue Jays</li>
             <li onClick={this.handleTeamClick} id="Nationals">Washington Nationals</li>
           </ul>
-        
-        
         <button
           className = "submit-button"
-          type = "submit" >
+          type = "submit" 
+        >
          select team 
         </button>
       </form>
@@ -71,12 +76,13 @@ export class TeamSelect extends Component {
 }
 
 const mapStateToProps = (state) => ({
-
+  team: state.team
 })
 
-const mapDispatchToProps = {
-
-}
+export const mapDispatchToProps = (dispatch) => ({
+  handleTeamSelect: (team) =>
+    dispatch(addSelectedTeamToStore(team))
+});
 
 TeamSelect.propTypes = {
 
