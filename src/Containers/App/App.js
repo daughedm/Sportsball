@@ -34,7 +34,7 @@ export class App extends Component {
   render() { 
     const teamSelected = this.props.selectedTeam;
     
-    const teamSelectOrMain = teamSelected.value ? (
+    const teamSelectOrMain = !teamSelected ? (
       <FormContainer />
     ) : (
       <Main />

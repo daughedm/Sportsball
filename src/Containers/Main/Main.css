@@ -1,9 +1,18 @@
 .orange-container {
   width: 70%;
-  height: 100%;
+  height: 100vh;
   background: radial-gradient(circle, #F26F44 0%, #A65638 100%);
-  float: right;
+  /* float: right; */
   padding: 60px 80px 60px 80px;
+  display: inline-block;
+}
+
+.left-container {
+  width: 30%;
+  height: 100%;
+  padding: 50px;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .talking-point {
@@ -26,7 +35,7 @@
 .u-list {
   padding: 0;
   overflow-x: hidden;
-  max-height: 650px;
+  max-height: 90%;
 }
 
 .point {
@@ -35,11 +44,21 @@
   font-size: 50pt;
   font-weight: 700;
   color: #F4F1E7;
-  padding: 30px 0 30px 0;
+  padding: 35px 0 35px 0;
   margin-right: 40px;
 }
 
 .border-bottom {
   border-bottom: 1px solid #F4F1E7;
+}
+ 
+.sportsball-logo-side {
+  width: 100%;
+  display: block;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
 }
 
