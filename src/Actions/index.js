@@ -2,7 +2,9 @@ import {
   addSummaryToStore,
   addBoxScoreToStore,
   removeBoxscoreFromStore,
-  removeSummaryFromStore
+  removeSummaryFromStore,
+  addSingleBoxScoreToStore,
+  addSingleSummaryToStore
 } from './mlbDataActions';
 
 import {
@@ -14,6 +16,8 @@ import {
 export {
     addSummaryToStore,
     addBoxScoreToStore,
+    addSingleBoxScoreToStore,
+    addSingleSummaryToStore,
     removeBoxscoreFromStore,
     removeSummaryFromStore,
     addUserToStore,

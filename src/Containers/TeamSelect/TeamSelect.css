@@ -1,4 +1,4 @@
-ul {
+.unordered-list {
   list-style-type: none;
 }
 
@@ -78,13 +78,13 @@ li a {
   color: #3C3C3A;
  }
 
-li {
+.list-item {
  padding: 15px 0 15px 0;
  height: 50px;
  border-bottom: 1px solid #808080;
 }
 
-ul :hover {
+.unordered-list :hover {
   background-color: #ffe4db;
 }
 

@@ -5,6 +5,13 @@ const addSummariesToStore = (summaries) => {
   }
 }
 
+const addSingleSummaryToStore = (summary) => {
+  return {
+    type: 'ADD_SINGLE_SUMMARY',
+    summary: summary
+  }
+}
+
 const removeSummariesFromStore = (summaries) => {
   return {
     type: 'REMOVE_SUMMARIES'
@@ -18,6 +25,13 @@ const addBoxScoresToStore = (boxScores) => {
   }
 }
 
+const addSingleBoxScoreToStore = (boxScore) => {
+  return {
+    type: 'ADD_SINGLE_BOXSCORE',
+    boxScore: boxScore
+  }
+}
+
 const removeBoxscoreFromStore = (boxscore) => {
   return {
     type: 'REMOVE_BOXSCORE'
@@ -28,5 +42,7 @@ export {
   addSummariesToStore,
   addBoxScoresToStore,
   removeBoxscoreFromStore,
-  removeSummariesFromStore
+  removeSummariesFromStore,
+  addSingleBoxScoreToStore,
+  addSingleSummaryToStore
 }

@@ -11,22 +11,16 @@ export default class FormContainer extends Component {
     super();
 
     this.state = {
-      onLogin: false,
-      onSignUp: false,
+      onLogin: false
     }
   }
   
   render() {
     const onLogin = this.state.onLogin;
-    const formPage = onLogin ? (
-      <Login />
-    ) : (
-      <SignUp />
-      );
+
     return ( 
       <div className="form-container">
         <img src={sportsballLogo} className="sportsball-logo"/>
-        {formPage}
         <TeamSelect />
       </div>
      )
