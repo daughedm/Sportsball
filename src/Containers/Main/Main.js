@@ -1,11 +1,15 @@
 import React from 'react'
 import './Main.css';
+import { connect } from 'react-redux';
 import { yesterdaysDate } from '../../Helpers/dataCleaner';
 import { winningMessages, losingMessages } from '../../Helpers/talkingPointPhrases';
+import { firstTalkingPoint } from '../../Helpers/talkingPointLogic';
 import logo from '../../Assets/images/logo_creme.svg';
 
 const Main = (props) => {
   const date = yesterdaysDate();
+  const firstPhrase = firstTalkingPoint(props.selectedTeam, props.singleGameSummary)
+  
   return (
     <div className="container">
       <div className="left-container">
@@ -16,10 +20,9 @@ const Main = (props) => {
         </h3>
         < div className="talking-points-container" >
           <ul className="u-list">
-            <li className="point border-bottom">Wow, that game was sick! I can’t believe the Indians won 4-1!</li>
+            <li className="point border-bottom">{ firstPhrase }</li>
             <li className="point border-bottom">That double that scored one in the third was clutch!</li>
-            <li className="point border-bottom">Lindor is having a fantastic year, hitting .345</li>     
-            <li className="point border-bottom">Lindor is having a fantastic year, hitting .345</li>      
+            <li className="point">Lindor is having a fantastic year, hitting .345</li>     
           </ul>
         </div>
       </div>
@@ -27,4 +30,10 @@ const Main = (props) => {
   )
 }
 
-export default Main;
+export const mapStateToProps = (state) => ({
+  selectedTeam: state.selectedTeam,
+  singleGameSummary: state.singleGameSummary,
+  singleBoxScore: state.singleBoxScore
+})
+
+export default connect(mapStateToProps, null)(Main)

@@ -9,10 +9,13 @@
 
 .left-container {
   width: 30%;
-  height: 100%;
+  height: 100vh;
   padding: 50px;
   display: inline-block;
   vertical-align: top;
+  background-image: url('../../Assets/images/horizBG.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .talking-point {
