@@ -32,9 +32,17 @@ export class App extends Component {
   }
 
   render() { 
+    const teamSelected = this.props.selectedTeam;
+    
+    const teamSelectOrMain = teamSelected.value ? (
+      <FormContainer />
+    ) : (
+      <Main />
+    );
+    
     return (
       < Router >
-        < FormContainer />
+        { teamSelectOrMain }
       </Router>
     );
   }
@@ -47,4 +55,8 @@ export const mapDispatchToProps = (dispatch) => ({
     dispatch(addBoxScoresToStore(boxScores))
 });
 
-export default withRouter(connect(null, mapDispatchToProps)(App));
+export const mapStateToProps = (state) => ({
+  selectedTeam: state.selectedTeam
+})
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));
