@@ -3,12 +3,13 @@ import './Main.css';
 import { connect } from 'react-redux';
 import { yesterdaysDate } from '../../Helpers/dataCleaner';
 import { winningMessages, losingMessages } from '../../Helpers/talkingPointPhrases';
-import { firstTalkingPoint } from '../../Helpers/talkingPointLogic';
+import { firstTalkingPoint, secondTalkingPoint } from '../../Helpers/talkingPointLogic';
 import logo from '../../Assets/images/logo_creme.svg';
 
 const Main = (props) => {
   const date = yesterdaysDate();
   const firstPhrase = firstTalkingPoint(props.selectedTeam, props.singleGameSummary)
+  const secondPhrase = secondTalkingPoint(props.selectedTeam, props.singleBoxScore)
   
   return (
     <div className="container">
@@ -21,7 +22,7 @@ const Main = (props) => {
         < div className="talking-points-container" >
           <ul className="u-list">
             <li className="point border-bottom">{ firstPhrase }</li>
-            <li className="point border-bottom">That double that scored one in the third was clutch!</li>
+            <li className="point border-bottom">{ secondPhrase }</li>
             <li className="point">Lindor is having a fantastic year, hitting .345</li>     
           </ul>
         </div>
