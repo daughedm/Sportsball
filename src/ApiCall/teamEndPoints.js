@@ -1,4 +1,4 @@
-const teamEndPoints = (team) => {
+export const teamEndPoints = (team) => {
   switch (team) {
     case 'Blue Jays':
       return '1d678440-b4b1-4954-9b39-70afb3ebbcfa';
