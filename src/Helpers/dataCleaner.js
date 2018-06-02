@@ -61,6 +61,17 @@ const teamStatCleaner = stats => {
   return teamStats
 }
 
+const findHighestAvg = (batters) => {
+  const sortedBatters = batters.sort((a, b) => b.statistics.hitting.overall.avg - a.statistics.hitting.overall.avg);
+  return sortedBatters[0];
+}
+
+const findMostWins = (pitchers) => {
+  const sortedPitchers = pitchers.sort((a, b) => b.statistics.pitching.overall.games.win - a.statistics.pitching.overall.games.win);
+  return sortedPitchers[0]
+}
+
+
 export { 
   yesterdaysDate,
   gameSummaryCleaner,
