@@ -54,6 +54,13 @@ const findGame = (yourTeam, path) => {
   return singleGame;
 }
 
+const teamStatCleaner = stats => {
+  const teamStats = {};
+  teamStats[stats.name] = stats.players;
+
+  return teamStats
+}
+
 export { 
   yesterdaysDate,
   gameSummaryCleaner,
