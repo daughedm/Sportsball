@@ -1,4 +1,4 @@
-import { gameSummaryFetch, boxScoreFetch } from './ApiCall';
+import { gameSummariesFetch, boxScoresFetch } from './ApiCall';
 import apiKey from './apiKey';
 import { mockBoxScoreData, mockSummaryData } from '../mockData/mockData';
 import { yesterdaysDate } from '../Helpers/dataCleaner';
@@ -21,13 +21,13 @@ describe('ApiCall', () => {
     it('should be called with the correct params', async () => {
       let url = `http://api.sportradar.us/mlb/trial/v6.5/en/games/${date}/summary.json?api_key=${apiKey}`;
       
-      await gameSummaryFetch();
+      await gameSummariesFetch();
 
       expect(window.fetch).toHaveBeenCalledWith(url);
     })
 
     it('should return an object if status code is ok', async () => {
-     await expect(gameSummaryFetch()).resolves.toEqual(mockSummaryData);
+     await expect(gameSummariesFetch()).resolves.toEqual(mockSummaryData);
     })
 
     it('should throw an error if status is not ok', async () => {
@@ -37,7 +37,7 @@ describe('ApiCall', () => {
         })
       );
 
-      await expect(gameSummaryFetch()).rejects.toEqual('Error on the catcher, could\'nt catch the data.')
+      await expect(gameSummariesFetch()).rejects.toEqual('Error on the catcher, could\'nt catch the data.')
     })
   })
 
@@ -56,13 +56,13 @@ describe('ApiCall', () => {
     it('should called with the correct params', async () => {
       let url = `http://api.sportradar.us/mlb/trial/v6.5/en/games/${date}/boxscore.json?api_key=${apiKey}`;
 
-       await boxScoreFetch();
+       await boxScoresFetch();
 
        expect(window.fetch).toHaveBeenCalledWith(url);
     })
 
     it('should return an object if status code is ok', async () => {
-      await expect(boxScoreFetch()).resolves.toEqual(mockBoxScoreData);
+      await expect(boxScoresFetch()).resolves.toEqual(mockBoxScoreData);
     })
 
     it('should throw an error if status is not ok', async () => {
@@ -72,7 +72,7 @@ describe('ApiCall', () => {
         })
       );
 
-      await expect(boxScoreFetch()).rejects.toEqual('Error on the catcher, could\'nt catch the data.')
+      await expect(boxScoresFetch()).rejects.toEqual('Error on the catcher, could\'nt catch the data.')
     })
   })
 })

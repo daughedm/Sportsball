@@ -1,5 +1,3 @@
-import * as prases from './talkingPointPhrases';
-
 const yesterdaysDate = () => {
   let todayTimeStamp = new Date();
   let oneDayTimeStamp = 1000 * 60 * 60 * 24;
@@ -55,25 +53,6 @@ const findGame = (yourTeam, path) => {
   }
   return singleGame;
 }
-
-// const firstTalkingPoint = (yourTeam) => {
-//   const teamsGame = findGame(yourTeam);
-//   let score = `${teamsGame.homeTeamRuns} - ${teamsGame.awayTeamRuns}`;
-//   let randNum;
-//   let message;
-
-//   if (teamsGame.winningTeam === yourTeam) {
-//     randNum = Math.floor(Math.random() * winningMessages(yourTeam, score).length);
-//     console.log(randNum)
-//     message = winningMessages(yourTeam, score)[randNum];
-//   } else if (teamsGame.winningTeam !== yourTeam && teamsGame.winningTeam !== undefined) {
-//     randNum = Math.floor(Math.random() * losingMessages(yourTeam, score).length);
-//     message = losingMessages(yourTeam, score)[randNum];
-//   } else {
-//     message = `The ${yourTeam} didn't play today!`;
-//   }
-//   return message;
-// }
 
 export { 
   yesterdaysDate,
