@@ -8,8 +8,9 @@ import logo from '../../Assets/images/logo_creme.svg';
 
 const Main = (props) => {
   const date = yesterdaysDate();
-  const firstPhrase = firstTalkingPoint(props.selectedTeam, props.singleGameSummary)
-  const secondPhrase = secondTalkingPoint(props.selectedTeam, props.singleBoxScore)
+  const firstPhrase = firstTalkingPoint(props.selectedTeam, props.singleGameSummary);
+  const secondPhrase = secondTalkingPoint(props.selectedTeam, props.singleBoxScore);
+  const thirdPrase = thirdTalkingPoint(props.selectedTeam, props.teamStats)
   
   return (
     <div className="container">

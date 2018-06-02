@@ -91,5 +91,10 @@ export {
   yesterdaysDate,
   gameSummaryCleaner,
   boxScoresCleaner,
-  findGame
+  findGame,
+  teamStatCleaner,
+  filterBatters,
+  filterPitchers,
+  findHighestAvg,
+  findMostWins
 };
