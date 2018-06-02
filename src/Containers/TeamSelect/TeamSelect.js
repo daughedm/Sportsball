@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import { findGame } from '../../Helpers/dataCleaner'
+import { findGame, teamStatCleaner } from '../../Helpers/dataCleaner'
 import { addSelectedTeamToStore } from '../../Actions/userActions';
 import './TeamSelect.css';
 import { addSingleSummaryToStore, addSingleBoxScoreToStore, addTeamStatsToStore } from '../../Actions';
@@ -24,7 +24,8 @@ export class TeamSelect extends Component {
 
   handleTeamSubmit = async (event) => {
     event.preventDefault();
-    const teamStats = await teamStatsFetch(this.state.team);
+    const allTeamStats = await teamStatsFetch(this.state.team);
+    const teamStats = teamStatCleaner(allTeamStats)
     const singleBoxScore = findGame(this.state.team, this.props.boxScores);
     const singleSummary = findGame(this.state.team, this.props.gameSummaries);
 

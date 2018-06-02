@@ -61,6 +61,21 @@ const teamStatCleaner = stats => {
   return teamStats
 }
 
+const filterBatters = (teamStat, team) => {
+  const onlyBatters = teamStat[team].filter(player => {
+    return player.position !== 'P';
+  })
+  return onlyBatters;
+}
+
+const filterPitchers = (teamStat, team) => {
+  const onlyPitchers = teamStat[team].filter(player => {
+    return player.position === 'P';
+  })
+  return onlyPitchers;
+}
+
+
 const findHighestAvg = (batters) => {
   const sortedBatters = batters.sort((a, b) => b.statistics.hitting.overall.avg - a.statistics.hitting.overall.avg);
   return sortedBatters[0];
