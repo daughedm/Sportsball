@@ -4,7 +4,8 @@ import {
   removeBoxscoreFromStore,
   removeSummaryFromStore,
   addSingleBoxScoreToStore,
-  addSingleSummaryToStore
+  addSingleSummaryToStore,
+  addTeamStatsToStore  
 } from './mlbDataActions';
 
 import {
@@ -14,13 +15,14 @@ import {
 } from './userActions';
 
 export {
-    addSummaryToStore,
-    addBoxScoreToStore,
-    addSingleBoxScoreToStore,
-    addSingleSummaryToStore,
-    removeBoxscoreFromStore,
-    removeSummaryFromStore,
-    addUserToStore,
-    removeUserFromStore,
-    addSeletectedTeamToStore
+  addSummaryToStore,
+  addBoxScoreToStore,
+  addSingleBoxScoreToStore,
+  addSingleSummaryToStore,
+  removeBoxscoreFromStore,
+  removeSummaryFromStore,
+  addUserToStore,
+  removeUserFromStore,
+  addSeletectedTeamToStore,
+  addTeamStatsToStore,
 }

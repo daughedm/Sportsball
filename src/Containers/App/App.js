@@ -4,9 +4,9 @@ import { Route, Redirect, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import FormContainer from '../FormContainer/FormContainer';
 import Main from '../Main/Main';
-import { gameSummariesFetch, boxScoresFetch } from '../../ApiCall/ApiCall';
+import { gameSummariesFetch, boxScoresFetch, teamStatsFetch } from '../../ApiCall/ApiCall';
 import { gameSummaryCleaner, boxScoresCleaner } from '../../Helpers/dataCleaner';
-import { addSummariesToStore, addBoxScoresToStore } from '../../Actions/mlbDataActions';
+import { addSummariesToStore, addBoxScoresToStore, addTeamStatsToStore } from '../../Actions/mlbDataActions';
 
 export class App extends Component {
   
@@ -52,7 +52,9 @@ export const mapDispatchToProps = (dispatch) => ({
   handleSummaries: (summaries) => 
     dispatch(addSummariesToStore(summaries)),
   handleBoxScores: (boxScores) =>
-    dispatch(addBoxScoresToStore(boxScores))
+    dispatch(addBoxScoresToStore(boxScores)),
+  handleTeamStats: (teamStats) => 
+    dispatch(addTeamStatsToStore(teamStats))
 });
 
 export const mapStateToProps = (state) => ({

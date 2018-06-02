@@ -38,11 +38,19 @@ const removeBoxscoreFromStore = (boxscore) => {
   }
 }
 
+const addTeamStatsToStore = (teamStats) => {
+  return {
+    type: 'ADD_TEAM_STATS',
+    teamStats: teamStats
+  }
+}
+
 export {
   addSummariesToStore,
   addBoxScoresToStore,
   removeBoxscoreFromStore,
   removeSummariesFromStore,
   addSingleBoxScoreToStore,
-  addSingleSummaryToStore
+  addSingleSummaryToStore,
+  addTeamStatsToStore,
 }
