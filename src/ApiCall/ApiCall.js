@@ -1,5 +1,7 @@
 import apiKey from './apiKey';
 import { yesterdaysDate } from '../Helpers/dataCleaner';
+import { AssertionError } from 'assert';
+import { teamEndPoints } from './teamEndPoints';
 
 const gameSummariesFetch = async () => {
   const date = yesterdaysDate();
@@ -29,4 +31,13 @@ const boxScoresFetch = async () => {
   }
 };  
 
+const teamStatsFetch = async (team) => {
+  const teamId = teamEndPoints(team);
+  const year = currentTime.getFullYear()
+
+}
+
 export { gameSummariesFetch, boxScoresFetch }
+
+
+`http://api.sportradar.us/mlb/trial/v6.5/en/seasons/${year}/REG/teams/${teamId}/statistics.json?api_key=${apiKey}`
