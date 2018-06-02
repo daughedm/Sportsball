@@ -10,10 +10,14 @@ const eventMessages = (yourTeam, event, inning, numberScored) => {
   return [`Did you see that ${event} in the ${inning} that scored ${numberScored}?`, `That ${event} in the ${inning} was so clutch.`, `I was so pumped about that ${event} in the ${inning}.`, `The ${inning} was such an explosive inning for us.`, `The ${event} in the ${inning} was amazing.`, `The ${event} in the ${inning} was very underrated.`]
 }
 
-const playerMessages = (player, stat) => {
-  return [`${player} is having great year hitting ${stat}.`]
+const batterMessages = (first, last, stat) => {
+  return [`${first} ${last} is having great year hitting ${stat}.`]
 }
 
-export { winningMessages, losingMessages, eventMessages };
+const pitcherMessages = (first, last, stat) => {
+  return [`${first} ${last} is so good, he has ${stat} wins this year already.`]
+}
+
+export { winningMessages, losingMessages, eventMessages, batterMessages, pitcherMessages };
 
 
