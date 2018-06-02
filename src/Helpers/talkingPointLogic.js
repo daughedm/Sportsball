@@ -1,5 +1,6 @@
-import { winningMessages, losingMessages, eventMessages } from './talkingPointPhrases';
+import { winningMessages, losingMessages, eventMessages, batterMessages, pitcherMessages } from './talkingPointPhrases';
 import { eventCleaner, inningCleaner, eventToSlang } from './eventTranslations';
+import { filterBatters, filterPitchers, findHighestAvg, findMostWins } from '../Helpers/dataCleaner';
 
 const firstTalkingPoint = (yourTeam, mlbData) => {
   let score = `${mlbData.homeTeamRuns} - ${mlbData.awayTeamRuns}`;
@@ -30,6 +31,9 @@ const secondTalkingPoint = (yourTeam, mlbData) => {
     let inning = inningCleaner(mlbData.homeTeamEvents[randomNumEvent].inning);
     let runsScored = mlbData.homeTeamEvents[randomNumEvent].runners.length;
     message = eventMessages(yourTeam, event, inning, runsScored)[randNumMessage];
+    if (message === undefined) {
+      message = 'That was such a boring game. Literally nothing eventful happened'
+    }
 
   } else if (mlbData.awayTeam === yourTeam) {
     randomNumEvent = Math.floor(Math.random() * mlbData.awayTeamEvents.length)
@@ -37,11 +41,32 @@ const secondTalkingPoint = (yourTeam, mlbData) => {
     let inning = inningCleaner(mlbData.awayTeamEvents[randomNumEvent].inning);
     let runsScored = mlbData.awayTeamEvents[randomNumEvent].runners.length;
     message = eventMessages(yourTeam, event, inning, runsScored)[randNumMessage];
-
+    if (message === undefined) {
+      message = 'That was such a boring game. Literally nothing eventful happened'
+    }
   } else {
     message = `Talk about the weather or something, I dunno.`;
   }
   return message;
 }
 
-export { firstTalkingPoint, secondTalkingPoint };
+const thirdTalkingPoint = (yourTeam, teamStats) => {
+  let message;
+  let randomBatterNumber;
+  let randomPitcherNumber;
+  let randNum = Math.floor(Math.random() * 2)
+  let bestBatter = findHighestAvg(filterBatters(teamStats, yourTeam));
+  let bestPitcher = findMostWins(filterPitchers(teamStats, yourTeam));
+
+  if(randNum < 1) {
+    randomBatterNumber = Math.floor(Math.random() * batterMessages('x', 'x', 'x').length);
+    message = batterMessages(bestBatter.first_name, bestBatter.last_name, bestBatter.statistics.hitting.overall.avg)[randomBatterNumber]
+  } 
+  else if(randNum >= 1) {
+    randomPitcherNumber = Math.floor(Math.random() * pitcherMessages('x', 'x', 'x').length);
+    message = pitcherMessages(bestPitcher.first_name, bestPitcher.last_name, bestPitcher.statistics.pitching.overall.games.win)[randomBatterNumber]
+  }
+return message
+}
+
+export { firstTalkingPoint, secondTalkingPoint, thirdTalkingPoint };

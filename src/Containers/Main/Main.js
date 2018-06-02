@@ -8,9 +8,9 @@ import logo from '../../Assets/images/logo_creme.svg';
 
 const Main = (props) => {
   const date = yesterdaysDate();
-  const firstPhrase = firstTalkingPoint(props.selectedTeam, props.singleGameSummary);
+  const thirdPhrase = thirdTalkingPoint(props.selectedTeam, props.teamStats);
   const secondPhrase = secondTalkingPoint(props.selectedTeam, props.singleBoxScore);
-  const thirdPrase = thirdTalkingPoint(props.selectedTeam, props.teamStats);
+  const firstPhrase = firstTalkingPoint(props.selectedTeam, props.singleGameSummary);
   
   return (
     <div className="container">
@@ -24,7 +24,7 @@ const Main = (props) => {
           <ul className="u-list">
             <li className="point border-bottom">{ firstPhrase }</li>
             <li className="point border-bottom">{ secondPhrase }</li>
-            <li className="point">{ thirdPrase}}</li>     
+            <li className="point">{ thirdPhrase }</li>     
           </ul>
         </div>
       </div>

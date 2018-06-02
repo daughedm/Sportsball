@@ -26,13 +26,13 @@ export class TeamSelect extends Component {
     event.preventDefault();
     const allTeamStats = await teamStatsFetch(this.state.team);
     const teamStats = teamStatCleaner(allTeamStats)
+    this.props.handleTeamStats(teamStats);
     const singleBoxScore = findGame(this.state.team, this.props.boxScores);
     const singleSummary = findGame(this.state.team, this.props.gameSummaries);
 
     this.props.handleTeamSelect(this.state.team);
     this.props.handleBoxScore(singleBoxScore);
     this.props.handleGameSummary(singleSummary);
-    this.props.handleTeamStats(teamStats);
   }
 
   render() {
