@@ -54,9 +54,47 @@ const findGame = (yourTeam, path) => {
   return singleGame;
 }
 
+const teamStatCleaner = stats => {
+  const teamStats = {};
+  teamStats[stats.name] = stats.players;
+
+  return teamStats
+}
+
+const filterBatters = (teamStat, team) => {
+  const onlyBatters = teamStat[team].filter(player => {
+    return player.position !== 'P';
+  })
+  return onlyBatters;
+}
+
+const filterPitchers = (teamStat, team) => {
+  const onlyPitchers = teamStat[team].filter(player => {
+    return player.position === 'P';
+  })
+  return onlyPitchers;
+}
+
+
+const findHighestAvg = (batters) => {
+  const sortedBatters = batters.sort((a, b) => b.statistics.hitting.overall.avg - a.statistics.hitting.overall.avg);
+  return sortedBatters[0];
+}
+
+const findMostWins = (pitchers) => {
+  const sortedPitchers = pitchers.sort((a, b) => b.statistics.pitching.overall.games.win - a.statistics.pitching.overall.games.win);
+  return sortedPitchers[0]
+}
+
+
 export { 
   yesterdaysDate,
   gameSummaryCleaner,
   boxScoresCleaner,
-  findGame
+  findGame,
+  teamStatCleaner,
+  filterBatters,
+  filterPitchers,
+  findHighestAvg,
+  findMostWins
 };

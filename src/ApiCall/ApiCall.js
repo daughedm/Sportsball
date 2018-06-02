@@ -33,11 +33,19 @@ const boxScoresFetch = async () => {
 
 const teamStatsFetch = async (team) => {
   const teamId = teamEndPoints(team);
-  const year = currentTime.getFullYear()
+  const year = (new Date()).getFullYear();
+  const url = `http://api.sportradar.us/mlb/trial/v6.5/en/seasons/${year}/REG/teams/${teamId}/statistics.json?api_key=${apiKey}`;
+
+  try {
+    const response = await fetch(url);
+    const teamStats = await response.json();
+    return teamStats;
+  } catch (err) {
+    const error = 'Error on the catcher, could\'nt catch the data.';
+    throw error;
+  }
+
 
 }
 
-export { gameSummariesFetch, boxScoresFetch }
-
-
-`http://api.sportradar.us/mlb/trial/v6.5/en/seasons/${year}/REG/teams/${teamId}/statistics.json?api_key=${apiKey}`
+export { gameSummariesFetch, boxScoresFetch, teamStatsFetch }

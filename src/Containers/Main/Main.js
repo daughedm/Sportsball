@@ -3,13 +3,14 @@ import './Main.css';
 import { connect } from 'react-redux';
 import { yesterdaysDate } from '../../Helpers/dataCleaner';
 import { winningMessages, losingMessages } from '../../Helpers/talkingPointPhrases';
-import { firstTalkingPoint, secondTalkingPoint } from '../../Helpers/talkingPointLogic';
+import { firstTalkingPoint, secondTalkingPoint, thirdTalkingPoint } from '../../Helpers/talkingPointLogic';
 import logo from '../../Assets/images/logo_creme.svg';
 
 const Main = (props) => {
   const date = yesterdaysDate();
-  const firstPhrase = firstTalkingPoint(props.selectedTeam, props.singleGameSummary)
-  const secondPhrase = secondTalkingPoint(props.selectedTeam, props.singleBoxScore)
+  const thirdPhrase = thirdTalkingPoint(props.selectedTeam, props.teamStats);
+  const secondPhrase = secondTalkingPoint(props.selectedTeam, props.singleBoxScore);
+  const firstPhrase = firstTalkingPoint(props.selectedTeam, props.singleGameSummary);
   
   return (
     <div className="container">
@@ -23,7 +24,7 @@ const Main = (props) => {
           <ul className="u-list">
             <li className="point border-bottom">{ firstPhrase }</li>
             <li className="point border-bottom">{ secondPhrase }</li>
-            <li className="point">Lindor is having a fantastic year, hitting .345</li>     
+            <li className="point">{ thirdPhrase }</li>     
           </ul>
         </div>
       </div>
@@ -34,7 +35,8 @@ const Main = (props) => {
 export const mapStateToProps = (state) => ({
   selectedTeam: state.selectedTeam,
   singleGameSummary: state.singleGameSummary,
-  singleBoxScore: state.singleBoxScore
+  singleBoxScore: state.singleBoxScore,
+  teamStats: state.teamStats
 })
 
 export default connect(mapStateToProps, null)(Main)

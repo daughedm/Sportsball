@@ -4,7 +4,7 @@ import boxScoresReducer from './boxScoresReducer/boxScoresReducer';
 import selectedTeamReducer from './selctedTeamReducer/selectedTeamReducer';
 import singleBoxScoreReducer from './singleBoxScoreReducer/singleBoxScoreReducer';
 import singleGameSummaryReducer from './singleGameSummaryReducer/singleGameSummaryReducer';
-// import user from './userReducer';
+import teamStatsReducer from './teamStatsReducer/teamStatsReducer';
 
 const rootReducer = combineReducers({
   gameSummaries: gameSummariesReducer,
@@ -12,7 +12,7 @@ const rootReducer = combineReducers({
   selectedTeam: selectedTeamReducer,
   singleGameSummary: singleGameSummaryReducer,
   singleBoxScore: singleBoxScoreReducer,
-  // user: userReducer
+  teamStats: teamStatsReducer
 });
 
 export default rootReducer;
