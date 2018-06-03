@@ -25,25 +25,24 @@ const secondTalkingPoint = (yourTeam, mlbData) => {
   let randomNumEvent;
 
   if (mlbData.homeTeam === yourTeam) {
+    if (!mlbData.homeTeamEvents) {
+      message = 'That was such a boring game. Literally nothing eventful happened'
+    }
     randomNumEvent = Math.floor(Math.random() * mlbData.homeTeamEvents.length)
-    //figure out what happens when there are no events.
     let event = eventToSlang(eventCleaner(mlbData.homeTeamEvents[randomNumEvent].hitter_outcome));
     let inning = inningCleaner(mlbData.homeTeamEvents[randomNumEvent].inning);
     let runsScored = mlbData.homeTeamEvents[randomNumEvent].runners.length;
     message = eventMessages(yourTeam, event, inning, runsScored)[randNumMessage];
-    if (message === undefined) {
-      message = 'That was such a boring game. Literally nothing eventful happened'
-    }
 
   } else if (mlbData.awayTeam === yourTeam) {
+     if (!mlbData.homawayTeamEvents) {
+       message = 'That was such a boring game. Literally nothing eventful happened'
+     }
     randomNumEvent = Math.floor(Math.random() * mlbData.awayTeamEvents.length)
     let event = eventToSlang(eventCleaner(mlbData.awayTeamEvents[randomNumEvent].hitter_outcome));
     let inning = inningCleaner(mlbData.awayTeamEvents[randomNumEvent].inning);
     let runsScored = mlbData.awayTeamEvents[randomNumEvent].runners.length;
     message = eventMessages(yourTeam, event, inning, runsScored)[randNumMessage];
-    if (message === undefined) {
-      message = 'That was such a boring game. Literally nothing eventful happened'
-    }
   } else {
     message = `Talk about the weather or something, I dunno.`;
   }

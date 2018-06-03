@@ -65,3 +65,11 @@
   padding: 0;
 }
 
+.team-selected {
+  color: #F26F44;
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+}
+

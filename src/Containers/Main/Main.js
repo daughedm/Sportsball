@@ -6,6 +6,7 @@ import { winningMessages, losingMessages } from '../../Helpers/talkingPointPhras
 import { firstTalkingPoint, secondTalkingPoint, thirdTalkingPoint } from '../../Helpers/talkingPointLogic';
 import TeamSelectSide from '../TeamSelectSide/TeamSelectSide';
 import logo from '../../Assets/images/logo_creme.svg';
+import indians from '../../Assets/images/indians.svg';
 
 const Main = (props) => {
   const date = yesterdaysDate();
@@ -17,6 +18,7 @@ const Main = (props) => {
     <div className="container">
       <div className="left-container">
         <img className="sportsball-logo-side" src={logo}/>
+        <h2 className="team-selected">{props.selectedTeam}</h2>
         <TeamSelectSide />
       </div>
       <div className="orange-container">

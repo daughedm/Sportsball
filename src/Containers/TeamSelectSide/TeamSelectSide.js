@@ -42,7 +42,7 @@ export class TeamSelectSide extends Component {
         type = "submit"
         onSubmit={this.handleTeamSubmit} 
       >
-        <h3 className = "form-header" > Select Your Team </h3> 
+        <h3 className = "form-header" > Switch Teams </h3> 
            < ul className = "unordered-list dropdown-menu scrollable-menu"
            role = "menu" >
             <li className="list-item" onClick={this.handleTeamClick} id={"Diamondbacks"}>Arizona Diamondbacks</li>
