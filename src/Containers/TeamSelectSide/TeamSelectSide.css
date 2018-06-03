@@ -1,0 +1,131 @@
+.unordered-list {
+  list-style-type: none;
+}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 170px;
+  overflow-x: hidden;
+  width: 100%;
+  border-radius: 4px;
+  border: 1px solid #3C3C3A;
+  margin-top: 25px;
+  background-color: #F4F1E7;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 0 40px 0 20px;
+}
+
+.side-form {
+  width: 100%;
+  background-color: rgba(60, 60, 58, 0.18);
+  border: 1px solid #F4F1E7;
+  border-radius: 4px;
+  margin: 60px auto;
+  padding: 35px;
+}
+
+.form-header {
+  color: #F26F44;
+  font-family: "Noto Sans";
+  font-size: 25px;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+.drop-down-button {
+  display: block;
+  width: 100%;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid #3C3C3A;
+  margin-top: 25px;
+  background-color: #F4F1E7;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  font-size: 14px;
+  color: #3C3C3A;
+}
+
+.submit-button {
+  display: block;
+  margin-top: 25px;
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  background: linear-gradient(0deg, #F26F44 11%, #F98059 52%, #FF8F6B 100%);
+  color: #F4F1E7;
+  font-size: 16px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.anchor-toggle {
+  font-size: 14px;
+  display: block;
+  text-decoration: underline;
+  color: #F4F1E7;
+  font-style: italic;
+  padding-top: 12px;
+  cursor: pointer;
+}
+
+li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #3C3C3A;
+ }
+
+.list-item {
+ padding: 15px 0 15px 0;
+ height: 50px;
+ border-bottom: 1px solid #808080;
+}
+
+.unordered-list :hover {
+  background-color: #ffe4db;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f26f44;
+  border: 2px solid transparent;
+  border-radius: 44px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f26f44;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #f26f44;
+}
+
+::-webkit-scrollbar-track {
+  background: #f4f1e7;
+  border: 45px none #ffffff;
+  border-radius: 44px;
+}
+
+::-webkit-scrollbar-track:hover {
+  background: transparent;
+}
+
+::-webkit-scrollbar-track:active {
+  background: transparent;
+}
+
+::-webkit-scrollbar-corner {
+  background: transparent;
+}

@@ -1,7 +1,7 @@
 const teamStatsReducer = (state = {}, action) => {
   switch (action.type) {
     case 'ADD_TEAM_STATS':
-      return action.teamStats;
+      return {...state, ...action.teamStats};
     default:
       return state;
   }
