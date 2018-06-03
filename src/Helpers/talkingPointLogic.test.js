@@ -1,6 +1,10 @@
 import { firstTalkingPoint } from './talkingPointLogic';
 import { winningMessages, losingMessages } from './talkingPointPhrases';
 
+const mockMath = Object.create(global.Math);
+mockMath.random = () => 0;
+global.Math = mockMath;
+
 describe('talkingPointLogic', () => {
   let mockData;
   beforeEach(() => {
@@ -34,5 +38,19 @@ describe('talkingPointLogic', () => {
 
       expect(actual).toEqual(expected);
     })
+
+      it('should return a winning phrase if your team wins', () => {
+        const actual = firstTalkingPoint('Indians', mockData);
+        const expected = 'Wow, that game was sick! I can’t believe the Indians won 1 - 0!'
+
+        expect(actual).toEqual(expected);
+      })
+
+        it('should return a losing phrase if your team loses', () => {
+          const actual = firstTalkingPoint('Cubs', mockData);
+          const expected = 'Damn, what a bummer! I can’t believe the Cubs lost 1 - 0!'
+
+          expect(actual).toEqual(expected);
+        })
   })
 })
