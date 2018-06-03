@@ -111,9 +111,8 @@ export const eventCleaner = (event) => {
     case 'oST2':
     case 'oST3':
     case 'oST4':
-    case '':
       return 'single'
-    case 'oTT4 ':
+    case 'oTT4':
       return 'triple'
     default:
       return 'that play';
