@@ -64,7 +64,7 @@ const thirdTalkingPoint = (yourTeam, teamStats) => {
   } 
   else if(randNum >= 1) {
     randomPitcherNumber = Math.floor(Math.random() * pitcherMessages('x', 'x', 'x').length);
-    message = pitcherMessages(bestPitcher.first_name, bestPitcher.last_name, bestPitcher.statistics.pitching.overall.games.win)[randomBatterNumber]
+    message = pitcherMessages(bestPitcher.first_name, bestPitcher.last_name, bestPitcher.statistics.pitching.overall.games.win)[randomPitcherNumber]
   }
 return message
 }

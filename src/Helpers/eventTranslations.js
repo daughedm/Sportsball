@@ -187,10 +187,10 @@ export const eventToSlang = (event) => {
   }
 }
 
-const slangHomerun = ['dinger', 'moon shot', 'monster dong', 'donger', 'four bagger', 'jack', 'quadrangler', 'goner', 'tater', 'jonron', 'homerun', 'homer', 'mash', 'no-doubter' ];
+let slangHomerun = ['dinger', 'moon shot', 'monster dong', 'donger', 'four bagger', 'jack', 'quadrangler', 'goner', 'tater', 'jonron', 'homerun', 'homer', 'mash', 'no-doubter' ];
 
-const slangSingle = ['base knock', 'sencillo', 'bleeder', 'single', 'lace', 'rip' ]
+let slangSingle = ['base knock', 'sencillo', 'bleeder', 'single', 'lace', 'rip' ]
 
-const slangDouble = ['gapper', 'double', 'lace', 'rip', 'frozen rope', 'two bagger' ]
+let slangDouble = ['gapper', 'double', 'lace', 'rip', 'frozen rope', 'two bagger' ]
 
-const slangTriple = ['three bagger', 'triple']
+let slangTriple = ['three bagger', 'triple']
