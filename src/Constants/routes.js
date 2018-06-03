@@ -1,2 +1,2 @@
-export const LANDING = '/';
+export const Landing = '/';
 export const Main = '/main';
