@@ -10,7 +10,7 @@ describe('teamEndPoints', () => {
 
   it('return a key code based on what team you put in', () => {
     const actual = teamEndPoints('Rays');
-    const expected = '1d678440-b4b1-4954-9b39-70afb3ebbcfa'
+    const expected = 'bdc11650-6f74-49c4-875e-778aeb7632d9'
 
     expect(actual).toEqual(expected);
   })
