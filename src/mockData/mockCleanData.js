@@ -7,6 +7,17 @@ export const mockCleanSummary = {
   losingTeam: 'Cubs'
 }
 
+export const mockCleanSummaries = [{
+  homeTeam: 'Indians',
+  awayTeam: 'Cubs',
+  homeTeamRuns: 100,
+  awayTeamRuns: 0,
+  winningTeam: 'Indians',
+  losingTeam: 'Cubs'
+}]
+
+
+
 export const mockCleanBoxScores = {
   homeTeam: 'Indians',
   awayTeam: 'Cubs',
@@ -14,6 +25,16 @@ export const mockCleanBoxScores = {
   awayTeamEvents: [{},{}]
 }
 
+export const mockedCleanBoxScores = [{
+  homeTeam: 'Indians',
+  awayTeam: 'Cubs',
+  homeTeamEvents: [{
+    runners: [1, 2, 3]
+  }, {
+    runners: [1, 2, 3]
+  }],
+  awayTeamEvents: [{}, {}]
+}]
 
 export const mockFullCleanBoxScores = [{
   "awayTeam": "Athletics",
@@ -470,4 +491,7 @@ export const mockCleanTeamStats = {
           }
         }]}
 
-export default { mockCleanSummary, mockCleanBoxScores, mockCleanTeamStats, mockFullCleanBoxScores }
+export default { mockCleanSummary, mockCleanBoxScores, mockCleanTeamStats, mockFullCleanBoxScores,
+mockCleanSummaries,
+mockedCleanBoxScores
+}

@@ -2,12 +2,18 @@ import {
   yesterdaysDate,
   gameSummaryCleaner,
   boxScoresCleaner,
-  findGame
+  findGame,
+  teamStatCleaner
 } from './dataCleaner';
 
-import { mockFullCleanBoxScores } from './../mockData/mockCleanData';
+import {
+  mockFullCleanBoxScores,
+  mockCleanSummaries,
+  mockedCleanBoxScores,
+  mockCleanTeamStats
+} from './../mockData/mockCleanData';
 
-import { mockSummaryData, mockBoxScoreData } from '../mockData/mockdata';
+import { mockSummaryData, mockBoxScoreData, mockTeamStatsData } from '../mockData/mockdata';
 
 
 const fixedDate = new Date('2018-02-28T09:39:59');
@@ -56,8 +62,34 @@ describe('dataCleaner', () => {
   })
 
   describe('findGame', () => {
-    it('should return a single game object', () => {
-      const actual = findgame()
+    it('should return a single game summary object', () => {
+      const actual = findGame('Indians', mockCleanSummaries);
+
+      const expected = {
+        homeTeam: 'Indians',
+        awayTeam: 'Cubs',
+        homeTeamRuns: 100,
+        awayTeamRuns: 0,
+        winningTeam: 'Indians',
+        losingTeam: 'Cubs'
+      }
+
+      expect(actual).toEqual(expected)
+
+      })
+
+      it('should return a single boxscore object', () => {
+        const actual = findGame('Indians', mockedCleanBoxScores);
+
+        const expected = {
+          homeTeam: 'Indians',
+          awayTeam: 'Cubs',
+          homeTeamEvents: [{runners:[1,2,3]},{runners:[1,2,3]}],
+          awayTeamEvents: [{},{}]
+        }
+
+        expect(actual).toEqual(expected)
+
+      })
     })
   })
-})
