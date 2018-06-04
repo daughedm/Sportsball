@@ -14,6 +14,6 @@ const mockCleanBoxscores = {
   awayTeamEvents: [{},{}]
 }
 
-const mockCleanTeamStats = {}
+const mockCleanTeamStats = {Indians: {stats: 200}}
 
 export default { mockCleanSummary, mockCleanBoxscores, mockCleanTeamStats }
