@@ -3,7 +3,7 @@
 ![Main Page](./src/assets/images/mainpage.png)
 
 
-# Movie-Tracker
+# SPORTSBALL
 
 Sportsball is an app designed for people who don't like sports much but are often found in a position where they need to have a conversation about them. The goal was to give the user extremely digestable snippets of baseball events that happened the day before and give them enough vague info to get by in a brief sports converstaion. 
 
