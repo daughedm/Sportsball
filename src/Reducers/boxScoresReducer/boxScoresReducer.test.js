@@ -12,4 +12,11 @@ describe('boxScoreReducer', () => {
 
     expect(newState).toEqual(addBoxscoreToStore.boxScores);
   });
+
+  it('should have an initial state', () => {
+
+    let expected = []
+    expect(boxScoreReducer(undefined, {})).toEqual(expected)
+
+  })
 });

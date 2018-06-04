@@ -12,4 +12,11 @@ describe('gameSummariesReducer', () => {
 
     expect(newState).toEqual(addSummariesToStore.summaries);
   });
+
+  it('should have an initial state', () => {
+
+    let expected = []
+    expect(gameSummariesReducer(undefined, {})).toEqual(expected)
+
+  })
 });

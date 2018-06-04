@@ -1,8 +1,6 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import Login from "../Login/Login";
-import SignUp from "../SignUp/SignUp";
 import sportsballLogo from '../../Assets/images/logo_creme.svg';
 import loading from '../../Assets/images/loading.gif';
 import './FormContainer.css';
