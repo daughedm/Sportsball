@@ -18,6 +18,7 @@ export class App extends Component {
     const fullSummaries = await gameSummariesFetch();
     const cleanedSummaries = gameSummaryCleaner(fullSummaries);
     this.props.handleSummaries(cleanedSummaries);
+    
   }
 
   async getBoxScores() {
@@ -27,8 +28,8 @@ export class App extends Component {
   }
 
   getData() {
-    this.getSummaries();
     this.getBoxScores();
+    this.getSummaries();
   }
 
   render() { 

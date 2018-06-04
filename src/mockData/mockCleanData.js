@@ -1,4 +1,4 @@
-const mockCleanSummary = {
+export const mockCleanSummary = {
   homeTeam: 'Indians',
   awayTeam: 'Cubs',
   homeTeamRuns: 100,
@@ -7,14 +7,293 @@ const mockCleanSummary = {
   losingTeam: 'Cubs'
 }
 
-const mockCleanBoxScores = {
+export const mockCleanBoxScores = {
   homeTeam: 'Indians',
   awayTeam: 'Cubs',
   homeTeamEvents: [{runners:[1,2,3]},{runners:[1,2,3]}],
   awayTeamEvents: [{},{}]
 }
 
-const mockCleanTeamStats = {
+
+export const mockFullCleanBoxScores = [{
+  "awayTeam": "Athletics",
+  "awayTeamEvents": [{
+    "hitter_id": "a2c6cf2d-e796-4b45-900d-7db1bd6d39f7",
+    "hitter_outcome": "aD",
+    "id": "afb674c6-94e5-4763-bae0-e2bfd19e1cc5",
+    "inning": 2,
+    "inning_half": "B",
+    "pitcher_id": "1a2638a3-28df-46b3-9cca-0f8eb29b581f",
+    "runners": [{
+      "first_name": "Kyle",
+      "id": "483d3c01-a089-407d-baaf-c7bfabd56587",
+      "jersey_number": "15",
+      "last_name": "Seager",
+      "preferred_name": "Kyle",
+      "starting_base": 3
+    }],
+    "type": "pitch"
+  }, {
+    "hitter_id": "01eaff59-9b34-47fd-af64-54b2e6f22628",
+    "hitter_outcome": "aHR",
+    "id": "e312255a-bc1c-40c3-84a4-d029f8a2b760",
+    "inning": 5,
+    "inning_half": "B",
+    "pitcher_id": "1a2638a3-28df-46b3-9cca-0f8eb29b581f",
+    "runners": [{
+      "first_name": "Nelson",
+      "id": "01eaff59-9b34-47fd-af64-54b2e6f22628",
+      "jersey_number": "23",
+      "last_name": "Cruz",
+      "preferred_name": "Nelson",
+      "starting_base": 0
+    }, {
+      "first_name": "Jean",
+      "id": "6d49ed69-4365-48d7-904c-f7431641f67c",
+      "jersey_number": "2",
+      "last_name": "Segura",
+      "preferred_name": "Jean",
+      "starting_base": 1
+    }, {
+      "first_name": "Devaris",
+      "id": "65de4cd1-ca86-468c-9346-1e68d6279a8e",
+      "jersey_number": "9",
+      "last_name": "Gordon",
+      "preferred_name": "Dee",
+      "starting_base": 3
+    }],
+    "type": "pitch"
+  }, {
+    "hitter_id": "6d49ed69-4365-48d7-904c-f7431641f67c",
+    "hitter_outcome": "oSF",
+    "id": "33dae5e0-b385-44af-a10f-a88ddc3c1c76",
+    "inning": 6,
+    "inning_half": "B",
+    "pitcher_id": "113b8d58-57db-473d-87cf-db4570f41d2b",
+    "runners": [{
+      "first_name": "Ryon",
+      "id": "1efdb7af-9685-4929-a2a9-fc6f2ba865b8",
+      "jersey_number": "27",
+      "last_name": "Healy",
+      "preferred_name": "Ryon",
+      "starting_base": 3
+    }],
+    "type": "pitch"
+  }, {
+    "hitter_id": "6d49ed69-4365-48d7-904c-f7431641f67c",
+    "hitter_outcome": "oGO",
+    "id": "fc6d297e-d8ba-4e10-8df3-d6bb6c256856",
+    "inning": 8,
+    "inning_half": "B",
+    "pitcher_id": "0eff8545-de58-483c-9171-12435bc23ada",
+    "runners": [{
+      "first_name": "Benjamin",
+      "id": "f2a035af-20c4-4bb0-8a6f-7086ed2531a8",
+      "jersey_number": "16",
+      "last_name": "Gamel",
+      "preferred_name": "Ben",
+      "starting_base": 3
+    }],
+    "type": "pitch"
+  }],
+  "homeTeam": "Mariners",
+  "homeTeamEvents": [{
+    "hitter_id": "a2c6cf2d-e796-4b45-900d-7db1bd6d39f7",
+    "hitter_outcome": "aD",
+    "id": "afb674c6-94e5-4763-bae0-e2bfd19e1cc5",
+    "inning": 2,
+    "inning_half": "B",
+    "pitcher_id": "1a2638a3-28df-46b3-9cca-0f8eb29b581f",
+    "runners": [{
+      "first_name": "Kyle",
+      "id": "483d3c01-a089-407d-baaf-c7bfabd56587",
+      "jersey_number": "15",
+      "last_name": "Seager",
+      "preferred_name": "Kyle",
+      "starting_base": 3
+    }],
+    "type": "pitch"
+  }, {
+    "hitter_id": "01eaff59-9b34-47fd-af64-54b2e6f22628",
+    "hitter_outcome": "aHR",
+    "id": "e312255a-bc1c-40c3-84a4-d029f8a2b760",
+    "inning": 5,
+    "inning_half": "B",
+    "pitcher_id": "1a2638a3-28df-46b3-9cca-0f8eb29b581f",
+    "runners": [{
+      "first_name": "Nelson",
+      "id": "01eaff59-9b34-47fd-af64-54b2e6f22628",
+      "jersey_number": "23",
+      "last_name": "Cruz",
+      "preferred_name": "Nelson",
+      "starting_base": 0
+    }, {
+      "first_name": "Jean",
+      "id": "6d49ed69-4365-48d7-904c-f7431641f67c",
+      "jersey_number": "2",
+      "last_name": "Segura",
+      "preferred_name": "Jean",
+      "starting_base": 1
+    }, {
+      "first_name": "Devaris",
+      "id": "65de4cd1-ca86-468c-9346-1e68d6279a8e",
+      "jersey_number": "9",
+      "last_name": "Gordon",
+      "preferred_name": "Dee",
+      "starting_base": 3
+    }],
+    "type": "pitch"
+  }, {
+    "hitter_id": "6d49ed69-4365-48d7-904c-f7431641f67c",
+    "hitter_outcome": "oSF",
+    "id": "33dae5e0-b385-44af-a10f-a88ddc3c1c76",
+    "inning": 6,
+    "inning_half": "B",
+    "pitcher_id": "113b8d58-57db-473d-87cf-db4570f41d2b",
+    "runners": [{
+      "first_name": "Ryon",
+      "id": "1efdb7af-9685-4929-a2a9-fc6f2ba865b8",
+      "jersey_number": "27",
+      "last_name": "Healy",
+      "preferred_name": "Ryon",
+      "starting_base": 3
+    }],
+    "type": "pitch"
+  }, {
+    "hitter_id": "6d49ed69-4365-48d7-904c-f7431641f67c",
+    "hitter_outcome": "oGO",
+    "id": "fc6d297e-d8ba-4e10-8df3-d6bb6c256856",
+    "inning": 8,
+    "inning_half": "B",
+    "pitcher_id": "0eff8545-de58-483c-9171-12435bc23ada",
+    "runners": [{
+      "first_name": "Benjamin",
+      "id": "f2a035af-20c4-4bb0-8a6f-7086ed2531a8",
+      "jersey_number": "16",
+      "last_name": "Gamel",
+      "preferred_name": "Ben",
+      "starting_base": 3
+    }],
+    "type": "pitch"
+  }]
+}, {
+  "awayTeam": "Blue Jays",
+  "awayTeamEvents": [{
+    "hitter_id": "31d992e8-1016-484a-b7c3-2b5851442cc5",
+    "hitter_outcome": "aHR",
+    "id": "97bbe0da-6778-4b03-b3d6-82258e182538",
+    "inning": 1,
+    "inning_half": "B",
+    "pitcher_id": "c06ac3e5-bb24-415e-a4b6-7b5ae2377948",
+    "runners": [{
+      "first_name": "Joseph",
+      "id": "31d992e8-1016-484a-b7c3-2b5851442cc5",
+      "jersey_number": "7",
+      "last_name": "Mauer",
+      "preferred_name": "Joe",
+      "starting_base": 0
+    }],
+    "type": "pitch"
+  }, {
+    "hitter_id": "4be357dd-add5-4613-937d-6b9a0831d9ee",
+    "hitter_outcome": "aD",
+    "id": "01e57124-c737-4a24-b9f1-c039a7a27bad",
+    "inning": 1,
+    "inning_half": "B",
+    "pitcher_id": "c06ac3e5-bb24-415e-a4b6-7b5ae2377948",
+    "runners": [{
+      "first_name": "Maximilian",
+      "id": "a16f6afb-dbff-42ad-9621-52b769d2f224",
+      "jersey_number": "26",
+      "last_name": "Kepler",
+      "preferred_name": "Max",
+      "starting_base": 2
+    }],
+    "type": "pitch"
+  }, {
+    "hitter_id": "4be357dd-add5-4613-937d-6b9a0831d9ee",
+    "hitter_outcome": "aHR",
+    "id": "cb38dcc7-a96d-45bd-be61-7483120a6dce",
+    "inning": 6,
+    "inning_half": "B",
+    "pitcher_id": "c06ac3e5-bb24-415e-a4b6-7b5ae2377948",
+    "runners": [{
+      "first_name": "Eddie",
+      "id": "4be357dd-add5-4613-937d-6b9a0831d9ee",
+      "jersey_number": "20",
+      "last_name": "Rosario",
+      "preferred_name": "Eddie",
+      "starting_base": 0
+    }, {
+      "first_name": "Eduardo",
+      "id": "178af28f-f5bb-49e1-9770-71d6e39edb63",
+      "jersey_number": "5",
+      "last_name": "Escobar",
+      "preferred_name": "Eduardo",
+      "starting_base": 2
+    }],
+    "type": "pitch"
+  }],
+  "homeTeam": "Twins",
+  "homeTeamEvents": [{
+    "hitter_id": "31d992e8-1016-484a-b7c3-2b5851442cc5",
+    "hitter_outcome": "aHR",
+    "id": "97bbe0da-6778-4b03-b3d6-82258e182538",
+    "inning": 1,
+    "inning_half": "B",
+    "pitcher_id": "c06ac3e5-bb24-415e-a4b6-7b5ae2377948",
+    "runners": [{
+      "first_name": "Joseph",
+      "id": "31d992e8-1016-484a-b7c3-2b5851442cc5",
+      "jersey_number": "7",
+      "last_name": "Mauer",
+      "preferred_name": "Joe",
+      "starting_base": 0
+    }],
+    "type": "pitch"
+  }, {
+    "hitter_id": "4be357dd-add5-4613-937d-6b9a0831d9ee",
+    "hitter_outcome": "aD",
+    "id": "01e57124-c737-4a24-b9f1-c039a7a27bad",
+    "inning": 1,
+    "inning_half": "B",
+    "pitcher_id": "c06ac3e5-bb24-415e-a4b6-7b5ae2377948",
+    "runners": [{
+      "first_name": "Maximilian",
+      "id": "a16f6afb-dbff-42ad-9621-52b769d2f224",
+      "jersey_number": "26",
+      "last_name": "Kepler",
+      "preferred_name": "Max",
+      "starting_base": 2
+    }],
+    "type": "pitch"
+  }, {
+    "hitter_id": "4be357dd-add5-4613-937d-6b9a0831d9ee",
+    "hitter_outcome": "aHR",
+    "id": "cb38dcc7-a96d-45bd-be61-7483120a6dce",
+    "inning": 6,
+    "inning_half": "B",
+    "pitcher_id": "c06ac3e5-bb24-415e-a4b6-7b5ae2377948",
+    "runners": [{
+      "first_name": "Eddie",
+      "id": "4be357dd-add5-4613-937d-6b9a0831d9ee",
+      "jersey_number": "20",
+      "last_name": "Rosario",
+      "preferred_name": "Eddie",
+      "starting_base": 0
+    }, {
+      "first_name": "Eduardo",
+      "id": "178af28f-f5bb-49e1-9770-71d6e39edb63",
+      "jersey_number": "5",
+      "last_name": "Escobar",
+      "preferred_name": "Eduardo",
+      "starting_base": 2
+    }],
+    "type": "pitch"
+  }]
+}]
+
+export const mockCleanTeamStats = {
     Indians: [{
           preferred_name: 'Lonnie',
           first_name: 'Lonnie',
@@ -191,4 +470,4 @@ const mockCleanTeamStats = {
           }
         }]}
 
-export { mockCleanSummary, mockCleanBoxScores, mockCleanTeamStats }
+export default { mockCleanSummary, mockCleanBoxScores, mockCleanTeamStats, mockFullCleanBoxScores }
