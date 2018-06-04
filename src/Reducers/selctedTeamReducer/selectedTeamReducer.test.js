@@ -16,4 +16,11 @@ describe('selectedTeamReducer', () => {
 
     expect(newState).toEqual(addSelectedTeamToStore.team);
   });
+
+  it('should have an initial state', () => {
+
+    let expected = ""
+    expect(selectedTeamReducer(undefined, {})).toEqual(expected)
+
+  })
 });
