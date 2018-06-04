@@ -6,7 +6,7 @@ import loading from '../../Assets/images/loading.gif';
 import './FormContainer.css';
 import TeamSelect from '../TeamSelect/TeamSelect';
 
-class FormContainer extends Component {
+export class FormContainer extends Component {
   constructor(props) {
     super();
   }

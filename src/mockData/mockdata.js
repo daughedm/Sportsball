@@ -1,4 +1,4 @@
-const mockSummaryData = {
+export const mockSummaryData = {
     "league": {
       "alias": "MLB",
       "name": "Major League Baseball",
@@ -7027,7 +7027,7 @@ const mockSummaryData = {
 
 
 
-const mockBoxScoreData = {
+export const mockBoxScoreData = {
     "league": {
       "alias": "MLB",
       "name": "Major League Baseball",
@@ -8009,7 +8009,7 @@ const mockBoxScoreData = {
             }
           }]}}
 
-const mockTeamStatsData = {
+export const mockTeamStatsData = {
   "name": "Indians",
   "market": "Cleveland",
   "abbr": "CLE",

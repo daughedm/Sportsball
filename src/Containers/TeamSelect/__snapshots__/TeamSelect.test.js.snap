@@ -1,0 +1,1849 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TeamSelect should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <TeamSelect />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <h3
+          className="form-header"
+>
+           Select Your Team 
+</h3>,
+        <ul
+          className="unordered-list dropdown-menu scrollable-menu"
+          role="menu"
+>
+          <li
+                    className="list-item"
+                    id="Diamondbacks"
+                    onClick={[Function]}
+          >
+                    Arizona Diamondbacks
+          </li>
+          <li
+                    className="list-item"
+                    id="Braves"
+                    onClick={[Function]}
+          >
+                    Atlanta Braves
+          </li>
+          <li
+                    className="list-item"
+                    id="Orioles"
+                    onClick={[Function]}
+          >
+                    Baltimore Orioles
+          </li>
+          <li
+                    className="list-item"
+                    id="Red Sox"
+                    onClick={[Function]}
+          >
+                    Boston Red Sox
+          </li>
+          <li
+                    className="list-item"
+                    id="Cubs"
+                    onClick={[Function]}
+          >
+                    Chicago Cubs
+          </li>
+          <li
+                    className="list-item"
+                    id="White Sox"
+                    onClick={[Function]}
+          >
+                    Chicago White Sox
+          </li>
+          <li
+                    className="list-item"
+                    id="Reds"
+                    onClick={[Function]}
+          >
+                    Cincinnati Reds
+          </li>
+          <li
+                    className="list-item"
+                    id="Indians"
+                    onClick={[Function]}
+          >
+                    Cleveland Indians
+          </li>
+          <li
+                    className="list-item"
+                    id="Rockies"
+                    onClick={[Function]}
+          >
+                    Colorado Rockies
+          </li>
+          <li
+                    className="list-item"
+                    id="Tigers"
+                    onClick={[Function]}
+          >
+                    Detroit Tigers
+          </li>
+          <li
+                    className="list-item"
+                    id="Astros"
+                    onClick={[Function]}
+          >
+                    Houston Astros
+          </li>
+          <li
+                    className="list-item"
+                    id="Royals"
+                    onClick={[Function]}
+          >
+                    Kansas City Royals
+          </li>
+          <li
+                    className="list-item"
+                    id="Angels"
+                    onClick={[Function]}
+          >
+                    LA Angels of Anaheim
+          </li>
+          <li
+                    className="list-item"
+                    id="Dodgers"
+                    onClick={[Function]}
+          >
+                    Los Angeles Dodgers
+          </li>
+          <li
+                    className="list-item"
+                    id="Marlins"
+                    onClick={[Function]}
+          >
+                    Miami Marlins
+          </li>
+          <li
+                    className="list-item"
+                    id="Brewers"
+                    onClick={[Function]}
+          >
+                    Milwaukee Brewers
+          </li>
+          <li
+                    className="list-item"
+                    id="Twins"
+                    onClick={[Function]}
+          >
+                    Minnesota Twins
+          </li>
+          <li
+                    className="list-item"
+                    id="Mets"
+                    onClick={[Function]}
+          >
+                    New York Mets
+          </li>
+          <li
+                    className="list-item"
+                    id="Yankees"
+                    onClick={[Function]}
+          >
+                    New York Yankees
+          </li>
+          <li
+                    className="list-item"
+                    id="Athletics"
+                    onClick={[Function]}
+          >
+                    Oakland Athletics
+          </li>
+          <li
+                    className="list-item"
+                    id="Phillies"
+                    onClick={[Function]}
+          >
+                    Philadelphia Phillies
+          </li>
+          <li
+                    className="list-item"
+                    id="Pirates"
+                    onClick={[Function]}
+          >
+                    Pittsburgh Pirates
+          </li>
+          <li
+                    className="list-item"
+                    id="Padres"
+                    onClick={[Function]}
+          >
+                    San Diego Padres
+          </li>
+          <li
+                    className="list-item"
+                    id="Giants"
+                    onClick={[Function]}
+          >
+                    San Francisco Giants
+          </li>
+          <li
+                    className="list-item"
+                    id="Mariners"
+                    onClick={[Function]}
+          >
+                    Seattle Mariners
+          </li>
+          <li
+                    className="list-item"
+                    id="Cardinals"
+                    onClick={[Function]}
+          >
+                    St. Louis Cardinals
+          </li>
+          <li
+                    className="list-item"
+                    id="Rays"
+                    onClick={[Function]}
+          >
+                    Tampa Bay Rays
+          </li>
+          <li
+                    className="list-item"
+                    id="Rangers"
+                    onClick={[Function]}
+          >
+                    Texas Rangers
+          </li>
+          <li
+                    className="list-item"
+                    id="Blue Jays"
+                    onClick={[Function]}
+          >
+                    Toronto Blue Jays
+          </li>
+          <li
+                    className="list-item"
+                    id="Nationals"
+                    onClick={[Function]}
+          >
+                    Washington Nationals
+          </li>
+</ul>,
+        <button
+          className="submit-button"
+          type="submit"
+>
+          select team
+</button>,
+      ],
+      "className": "login-form",
+      "onSubmit": [Function],
+      "type": "submit",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": " Select Your Team ",
+          "className": "form-header",
+        },
+        "ref": null,
+        "rendered": " Select Your Team ",
+        "type": "h3",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <li
+              className="list-item"
+              id="Diamondbacks"
+              onClick={[Function]}
+>
+              Arizona Diamondbacks
+</li>,
+            <li
+              className="list-item"
+              id="Braves"
+              onClick={[Function]}
+>
+              Atlanta Braves
+</li>,
+            <li
+              className="list-item"
+              id="Orioles"
+              onClick={[Function]}
+>
+              Baltimore Orioles
+</li>,
+            <li
+              className="list-item"
+              id="Red Sox"
+              onClick={[Function]}
+>
+              Boston Red Sox
+</li>,
+            <li
+              className="list-item"
+              id="Cubs"
+              onClick={[Function]}
+>
+              Chicago Cubs
+</li>,
+            <li
+              className="list-item"
+              id="White Sox"
+              onClick={[Function]}
+>
+              Chicago White Sox
+</li>,
+            <li
+              className="list-item"
+              id="Reds"
+              onClick={[Function]}
+>
+              Cincinnati Reds
+</li>,
+            <li
+              className="list-item"
+              id="Indians"
+              onClick={[Function]}
+>
+              Cleveland Indians
+</li>,
+            <li
+              className="list-item"
+              id="Rockies"
+              onClick={[Function]}
+>
+              Colorado Rockies
+</li>,
+            <li
+              className="list-item"
+              id="Tigers"
+              onClick={[Function]}
+>
+              Detroit Tigers
+</li>,
+            <li
+              className="list-item"
+              id="Astros"
+              onClick={[Function]}
+>
+              Houston Astros
+</li>,
+            <li
+              className="list-item"
+              id="Royals"
+              onClick={[Function]}
+>
+              Kansas City Royals
+</li>,
+            <li
+              className="list-item"
+              id="Angels"
+              onClick={[Function]}
+>
+              LA Angels of Anaheim
+</li>,
+            <li
+              className="list-item"
+              id="Dodgers"
+              onClick={[Function]}
+>
+              Los Angeles Dodgers
+</li>,
+            <li
+              className="list-item"
+              id="Marlins"
+              onClick={[Function]}
+>
+              Miami Marlins
+</li>,
+            <li
+              className="list-item"
+              id="Brewers"
+              onClick={[Function]}
+>
+              Milwaukee Brewers
+</li>,
+            <li
+              className="list-item"
+              id="Twins"
+              onClick={[Function]}
+>
+              Minnesota Twins
+</li>,
+            <li
+              className="list-item"
+              id="Mets"
+              onClick={[Function]}
+>
+              New York Mets
+</li>,
+            <li
+              className="list-item"
+              id="Yankees"
+              onClick={[Function]}
+>
+              New York Yankees
+</li>,
+            <li
+              className="list-item"
+              id="Athletics"
+              onClick={[Function]}
+>
+              Oakland Athletics
+</li>,
+            <li
+              className="list-item"
+              id="Phillies"
+              onClick={[Function]}
+>
+              Philadelphia Phillies
+</li>,
+            <li
+              className="list-item"
+              id="Pirates"
+              onClick={[Function]}
+>
+              Pittsburgh Pirates
+</li>,
+            <li
+              className="list-item"
+              id="Padres"
+              onClick={[Function]}
+>
+              San Diego Padres
+</li>,
+            <li
+              className="list-item"
+              id="Giants"
+              onClick={[Function]}
+>
+              San Francisco Giants
+</li>,
+            <li
+              className="list-item"
+              id="Mariners"
+              onClick={[Function]}
+>
+              Seattle Mariners
+</li>,
+            <li
+              className="list-item"
+              id="Cardinals"
+              onClick={[Function]}
+>
+              St. Louis Cardinals
+</li>,
+            <li
+              className="list-item"
+              id="Rays"
+              onClick={[Function]}
+>
+              Tampa Bay Rays
+</li>,
+            <li
+              className="list-item"
+              id="Rangers"
+              onClick={[Function]}
+>
+              Texas Rangers
+</li>,
+            <li
+              className="list-item"
+              id="Blue Jays"
+              onClick={[Function]}
+>
+              Toronto Blue Jays
+</li>,
+            <li
+              className="list-item"
+              id="Nationals"
+              onClick={[Function]}
+>
+              Washington Nationals
+</li>,
+          ],
+          "className": "unordered-list dropdown-menu scrollable-menu",
+          "role": "menu",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Arizona Diamondbacks",
+              "className": "list-item",
+              "id": "Diamondbacks",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Arizona Diamondbacks",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Atlanta Braves",
+              "className": "list-item",
+              "id": "Braves",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Atlanta Braves",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Baltimore Orioles",
+              "className": "list-item",
+              "id": "Orioles",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Baltimore Orioles",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Boston Red Sox",
+              "className": "list-item",
+              "id": "Red Sox",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Boston Red Sox",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Chicago Cubs",
+              "className": "list-item",
+              "id": "Cubs",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Chicago Cubs",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Chicago White Sox",
+              "className": "list-item",
+              "id": "White Sox",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Chicago White Sox",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Cincinnati Reds",
+              "className": "list-item",
+              "id": "Reds",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Cincinnati Reds",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Cleveland Indians",
+              "className": "list-item",
+              "id": "Indians",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Cleveland Indians",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Colorado Rockies",
+              "className": "list-item",
+              "id": "Rockies",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Colorado Rockies",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Detroit Tigers",
+              "className": "list-item",
+              "id": "Tigers",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Detroit Tigers",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Houston Astros",
+              "className": "list-item",
+              "id": "Astros",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Houston Astros",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Kansas City Royals",
+              "className": "list-item",
+              "id": "Royals",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Kansas City Royals",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "LA Angels of Anaheim",
+              "className": "list-item",
+              "id": "Angels",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "LA Angels of Anaheim",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Los Angeles Dodgers",
+              "className": "list-item",
+              "id": "Dodgers",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Los Angeles Dodgers",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Miami Marlins",
+              "className": "list-item",
+              "id": "Marlins",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Miami Marlins",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Milwaukee Brewers",
+              "className": "list-item",
+              "id": "Brewers",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Milwaukee Brewers",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Minnesota Twins",
+              "className": "list-item",
+              "id": "Twins",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Minnesota Twins",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "New York Mets",
+              "className": "list-item",
+              "id": "Mets",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "New York Mets",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "New York Yankees",
+              "className": "list-item",
+              "id": "Yankees",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "New York Yankees",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Oakland Athletics",
+              "className": "list-item",
+              "id": "Athletics",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Oakland Athletics",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Philadelphia Phillies",
+              "className": "list-item",
+              "id": "Phillies",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Philadelphia Phillies",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Pittsburgh Pirates",
+              "className": "list-item",
+              "id": "Pirates",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Pittsburgh Pirates",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "San Diego Padres",
+              "className": "list-item",
+              "id": "Padres",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "San Diego Padres",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "San Francisco Giants",
+              "className": "list-item",
+              "id": "Giants",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "San Francisco Giants",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Seattle Mariners",
+              "className": "list-item",
+              "id": "Mariners",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Seattle Mariners",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "St. Louis Cardinals",
+              "className": "list-item",
+              "id": "Cardinals",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "St. Louis Cardinals",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Tampa Bay Rays",
+              "className": "list-item",
+              "id": "Rays",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Tampa Bay Rays",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Texas Rangers",
+              "className": "list-item",
+              "id": "Rangers",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Texas Rangers",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Toronto Blue Jays",
+              "className": "list-item",
+              "id": "Blue Jays",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Toronto Blue Jays",
+            "type": "li",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Washington Nationals",
+              "className": "list-item",
+              "id": "Nationals",
+              "onClick": [Function],
+            },
+            "ref": null,
+            "rendered": "Washington Nationals",
+            "type": "li",
+          },
+        ],
+        "type": "ul",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "select team",
+          "className": "submit-button",
+          "type": "submit",
+        },
+        "ref": null,
+        "rendered": "select team",
+        "type": "button",
+      },
+    ],
+    "type": "form",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <h3
+            className="form-header"
+>
+             Select Your Team 
+</h3>,
+          <ul
+            className="unordered-list dropdown-menu scrollable-menu"
+            role="menu"
+>
+            <li
+                        className="list-item"
+                        id="Diamondbacks"
+                        onClick={[Function]}
+            >
+                        Arizona Diamondbacks
+            </li>
+            <li
+                        className="list-item"
+                        id="Braves"
+                        onClick={[Function]}
+            >
+                        Atlanta Braves
+            </li>
+            <li
+                        className="list-item"
+                        id="Orioles"
+                        onClick={[Function]}
+            >
+                        Baltimore Orioles
+            </li>
+            <li
+                        className="list-item"
+                        id="Red Sox"
+                        onClick={[Function]}
+            >
+                        Boston Red Sox
+            </li>
+            <li
+                        className="list-item"
+                        id="Cubs"
+                        onClick={[Function]}
+            >
+                        Chicago Cubs
+            </li>
+            <li
+                        className="list-item"
+                        id="White Sox"
+                        onClick={[Function]}
+            >
+                        Chicago White Sox
+            </li>
+            <li
+                        className="list-item"
+                        id="Reds"
+                        onClick={[Function]}
+            >
+                        Cincinnati Reds
+            </li>
+            <li
+                        className="list-item"
+                        id="Indians"
+                        onClick={[Function]}
+            >
+                        Cleveland Indians
+            </li>
+            <li
+                        className="list-item"
+                        id="Rockies"
+                        onClick={[Function]}
+            >
+                        Colorado Rockies
+            </li>
+            <li
+                        className="list-item"
+                        id="Tigers"
+                        onClick={[Function]}
+            >
+                        Detroit Tigers
+            </li>
+            <li
+                        className="list-item"
+                        id="Astros"
+                        onClick={[Function]}
+            >
+                        Houston Astros
+            </li>
+            <li
+                        className="list-item"
+                        id="Royals"
+                        onClick={[Function]}
+            >
+                        Kansas City Royals
+            </li>
+            <li
+                        className="list-item"
+                        id="Angels"
+                        onClick={[Function]}
+            >
+                        LA Angels of Anaheim
+            </li>
+            <li
+                        className="list-item"
+                        id="Dodgers"
+                        onClick={[Function]}
+            >
+                        Los Angeles Dodgers
+            </li>
+            <li
+                        className="list-item"
+                        id="Marlins"
+                        onClick={[Function]}
+            >
+                        Miami Marlins
+            </li>
+            <li
+                        className="list-item"
+                        id="Brewers"
+                        onClick={[Function]}
+            >
+                        Milwaukee Brewers
+            </li>
+            <li
+                        className="list-item"
+                        id="Twins"
+                        onClick={[Function]}
+            >
+                        Minnesota Twins
+            </li>
+            <li
+                        className="list-item"
+                        id="Mets"
+                        onClick={[Function]}
+            >
+                        New York Mets
+            </li>
+            <li
+                        className="list-item"
+                        id="Yankees"
+                        onClick={[Function]}
+            >
+                        New York Yankees
+            </li>
+            <li
+                        className="list-item"
+                        id="Athletics"
+                        onClick={[Function]}
+            >
+                        Oakland Athletics
+            </li>
+            <li
+                        className="list-item"
+                        id="Phillies"
+                        onClick={[Function]}
+            >
+                        Philadelphia Phillies
+            </li>
+            <li
+                        className="list-item"
+                        id="Pirates"
+                        onClick={[Function]}
+            >
+                        Pittsburgh Pirates
+            </li>
+            <li
+                        className="list-item"
+                        id="Padres"
+                        onClick={[Function]}
+            >
+                        San Diego Padres
+            </li>
+            <li
+                        className="list-item"
+                        id="Giants"
+                        onClick={[Function]}
+            >
+                        San Francisco Giants
+            </li>
+            <li
+                        className="list-item"
+                        id="Mariners"
+                        onClick={[Function]}
+            >
+                        Seattle Mariners
+            </li>
+            <li
+                        className="list-item"
+                        id="Cardinals"
+                        onClick={[Function]}
+            >
+                        St. Louis Cardinals
+            </li>
+            <li
+                        className="list-item"
+                        id="Rays"
+                        onClick={[Function]}
+            >
+                        Tampa Bay Rays
+            </li>
+            <li
+                        className="list-item"
+                        id="Rangers"
+                        onClick={[Function]}
+            >
+                        Texas Rangers
+            </li>
+            <li
+                        className="list-item"
+                        id="Blue Jays"
+                        onClick={[Function]}
+            >
+                        Toronto Blue Jays
+            </li>
+            <li
+                        className="list-item"
+                        id="Nationals"
+                        onClick={[Function]}
+            >
+                        Washington Nationals
+            </li>
+</ul>,
+          <button
+            className="submit-button"
+            type="submit"
+>
+            select team
+</button>,
+        ],
+        "className": "login-form",
+        "onSubmit": [Function],
+        "type": "submit",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": " Select Your Team ",
+            "className": "form-header",
+          },
+          "ref": null,
+          "rendered": " Select Your Team ",
+          "type": "h3",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <li
+                className="list-item"
+                id="Diamondbacks"
+                onClick={[Function]}
+>
+                Arizona Diamondbacks
+</li>,
+              <li
+                className="list-item"
+                id="Braves"
+                onClick={[Function]}
+>
+                Atlanta Braves
+</li>,
+              <li
+                className="list-item"
+                id="Orioles"
+                onClick={[Function]}
+>
+                Baltimore Orioles
+</li>,
+              <li
+                className="list-item"
+                id="Red Sox"
+                onClick={[Function]}
+>
+                Boston Red Sox
+</li>,
+              <li
+                className="list-item"
+                id="Cubs"
+                onClick={[Function]}
+>
+                Chicago Cubs
+</li>,
+              <li
+                className="list-item"
+                id="White Sox"
+                onClick={[Function]}
+>
+                Chicago White Sox
+</li>,
+              <li
+                className="list-item"
+                id="Reds"
+                onClick={[Function]}
+>
+                Cincinnati Reds
+</li>,
+              <li
+                className="list-item"
+                id="Indians"
+                onClick={[Function]}
+>
+                Cleveland Indians
+</li>,
+              <li
+                className="list-item"
+                id="Rockies"
+                onClick={[Function]}
+>
+                Colorado Rockies
+</li>,
+              <li
+                className="list-item"
+                id="Tigers"
+                onClick={[Function]}
+>
+                Detroit Tigers
+</li>,
+              <li
+                className="list-item"
+                id="Astros"
+                onClick={[Function]}
+>
+                Houston Astros
+</li>,
+              <li
+                className="list-item"
+                id="Royals"
+                onClick={[Function]}
+>
+                Kansas City Royals
+</li>,
+              <li
+                className="list-item"
+                id="Angels"
+                onClick={[Function]}
+>
+                LA Angels of Anaheim
+</li>,
+              <li
+                className="list-item"
+                id="Dodgers"
+                onClick={[Function]}
+>
+                Los Angeles Dodgers
+</li>,
+              <li
+                className="list-item"
+                id="Marlins"
+                onClick={[Function]}
+>
+                Miami Marlins
+</li>,
+              <li
+                className="list-item"
+                id="Brewers"
+                onClick={[Function]}
+>
+                Milwaukee Brewers
+</li>,
+              <li
+                className="list-item"
+                id="Twins"
+                onClick={[Function]}
+>
+                Minnesota Twins
+</li>,
+              <li
+                className="list-item"
+                id="Mets"
+                onClick={[Function]}
+>
+                New York Mets
+</li>,
+              <li
+                className="list-item"
+                id="Yankees"
+                onClick={[Function]}
+>
+                New York Yankees
+</li>,
+              <li
+                className="list-item"
+                id="Athletics"
+                onClick={[Function]}
+>
+                Oakland Athletics
+</li>,
+              <li
+                className="list-item"
+                id="Phillies"
+                onClick={[Function]}
+>
+                Philadelphia Phillies
+</li>,
+              <li
+                className="list-item"
+                id="Pirates"
+                onClick={[Function]}
+>
+                Pittsburgh Pirates
+</li>,
+              <li
+                className="list-item"
+                id="Padres"
+                onClick={[Function]}
+>
+                San Diego Padres
+</li>,
+              <li
+                className="list-item"
+                id="Giants"
+                onClick={[Function]}
+>
+                San Francisco Giants
+</li>,
+              <li
+                className="list-item"
+                id="Mariners"
+                onClick={[Function]}
+>
+                Seattle Mariners
+</li>,
+              <li
+                className="list-item"
+                id="Cardinals"
+                onClick={[Function]}
+>
+                St. Louis Cardinals
+</li>,
+              <li
+                className="list-item"
+                id="Rays"
+                onClick={[Function]}
+>
+                Tampa Bay Rays
+</li>,
+              <li
+                className="list-item"
+                id="Rangers"
+                onClick={[Function]}
+>
+                Texas Rangers
+</li>,
+              <li
+                className="list-item"
+                id="Blue Jays"
+                onClick={[Function]}
+>
+                Toronto Blue Jays
+</li>,
+              <li
+                className="list-item"
+                id="Nationals"
+                onClick={[Function]}
+>
+                Washington Nationals
+</li>,
+            ],
+            "className": "unordered-list dropdown-menu scrollable-menu",
+            "role": "menu",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Arizona Diamondbacks",
+                "className": "list-item",
+                "id": "Diamondbacks",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Arizona Diamondbacks",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Atlanta Braves",
+                "className": "list-item",
+                "id": "Braves",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Atlanta Braves",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Baltimore Orioles",
+                "className": "list-item",
+                "id": "Orioles",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Baltimore Orioles",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Boston Red Sox",
+                "className": "list-item",
+                "id": "Red Sox",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Boston Red Sox",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Chicago Cubs",
+                "className": "list-item",
+                "id": "Cubs",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Chicago Cubs",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Chicago White Sox",
+                "className": "list-item",
+                "id": "White Sox",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Chicago White Sox",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Cincinnati Reds",
+                "className": "list-item",
+                "id": "Reds",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Cincinnati Reds",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Cleveland Indians",
+                "className": "list-item",
+                "id": "Indians",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Cleveland Indians",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Colorado Rockies",
+                "className": "list-item",
+                "id": "Rockies",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Colorado Rockies",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Detroit Tigers",
+                "className": "list-item",
+                "id": "Tigers",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Detroit Tigers",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Houston Astros",
+                "className": "list-item",
+                "id": "Astros",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Houston Astros",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Kansas City Royals",
+                "className": "list-item",
+                "id": "Royals",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Kansas City Royals",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "LA Angels of Anaheim",
+                "className": "list-item",
+                "id": "Angels",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "LA Angels of Anaheim",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Los Angeles Dodgers",
+                "className": "list-item",
+                "id": "Dodgers",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Los Angeles Dodgers",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Miami Marlins",
+                "className": "list-item",
+                "id": "Marlins",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Miami Marlins",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Milwaukee Brewers",
+                "className": "list-item",
+                "id": "Brewers",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Milwaukee Brewers",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Minnesota Twins",
+                "className": "list-item",
+                "id": "Twins",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Minnesota Twins",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "New York Mets",
+                "className": "list-item",
+                "id": "Mets",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "New York Mets",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "New York Yankees",
+                "className": "list-item",
+                "id": "Yankees",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "New York Yankees",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Oakland Athletics",
+                "className": "list-item",
+                "id": "Athletics",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Oakland Athletics",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Philadelphia Phillies",
+                "className": "list-item",
+                "id": "Phillies",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Philadelphia Phillies",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Pittsburgh Pirates",
+                "className": "list-item",
+                "id": "Pirates",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Pittsburgh Pirates",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "San Diego Padres",
+                "className": "list-item",
+                "id": "Padres",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "San Diego Padres",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "San Francisco Giants",
+                "className": "list-item",
+                "id": "Giants",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "San Francisco Giants",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Seattle Mariners",
+                "className": "list-item",
+                "id": "Mariners",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Seattle Mariners",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "St. Louis Cardinals",
+                "className": "list-item",
+                "id": "Cardinals",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "St. Louis Cardinals",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Tampa Bay Rays",
+                "className": "list-item",
+                "id": "Rays",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Tampa Bay Rays",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Texas Rangers",
+                "className": "list-item",
+                "id": "Rangers",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Texas Rangers",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Toronto Blue Jays",
+                "className": "list-item",
+                "id": "Blue Jays",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Toronto Blue Jays",
+              "type": "li",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Washington Nationals",
+                "className": "list-item",
+                "id": "Nationals",
+                "onClick": [Function],
+              },
+              "ref": null,
+              "rendered": "Washington Nationals",
+              "type": "li",
+            },
+          ],
+          "type": "ul",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "select team",
+            "className": "submit-button",
+            "type": "submit",
+          },
+          "ref": null,
+          "rendered": "select team",
+          "type": "button",
+        },
+      ],
+      "type": "form",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;
