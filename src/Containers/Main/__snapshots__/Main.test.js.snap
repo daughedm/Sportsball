@@ -1,0 +1,854 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Main should match the snapshot 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <Unknown
+    selectedTeam="Indians"
+    singleBoxScore={
+        Object {
+            "awayTeam": "Cubs",
+            "awayTeamEvents": Array [
+              Object {},
+              Object {},
+            ],
+            "homeTeam": "Indians",
+            "homeTeamEvents": Array [
+              Object {
+                "runners": Array [
+                  1,
+                  2,
+                  3,
+                ],
+              },
+              Object {
+                "runners": Array [
+                  1,
+                  2,
+                  3,
+                ],
+              },
+            ],
+          }
+    }
+    singleGameSummary={
+        Object {
+            "awayTeam": "Cubs",
+            "awayTeamRuns": 0,
+            "homeTeam": "Indians",
+            "homeTeamRuns": 100,
+            "losingTeam": "Cubs",
+            "winningTeam": "Indians",
+          }
+    }
+    teamStats={
+        Object {
+            "Indians": Array [
+              Object {
+                "first_name": "Lonnie",
+                "id": "7a8633ea-0824-4164-b0b1-e4394da6fc43",
+                "jersey_number": "8",
+                "last_name": "Chisenhall",
+                "position": "OF",
+                "preferred_name": "Lonnie",
+                "primary_position": "RF",
+                "statistics": Object {
+                  "fielding": Object {
+                    "overall": Object {
+                      "a": 0,
+                      "assists": Object {
+                        "outfield": 0,
+                        "total": 0,
+                      },
+                      "c_wp": 0,
+                      "dp": 0,
+                      "error": 0,
+                      "errors": Object {
+                        "fielding": 0,
+                        "interference": 0,
+                        "throwing": 0,
+                        "total": 0,
+                      },
+                      "fpct": 1,
+                      "games": Object {
+                        "complete": 0,
+                        "finish": 1,
+                        "play": 7,
+                        "start": 6,
+                      },
+                      "inn_1": 136,
+                      "inn_2": 45.1,
+                      "pb": 0,
+                      "po": 11,
+                      "rf": 1.571,
+                      "steal": Object {
+                        "caught": 0,
+                        "pct": 0,
+                        "pickoff": 0,
+                        "stolen": 0,
+                      },
+                      "tc": 11,
+                      "tp": 0,
+                    },
+                    "positions": Array [
+                      Object {
+                        "a": 0,
+                        "assists": Object {
+                          "outfield": 0,
+                          "total": 0,
+                        },
+                        "c_wp": 0,
+                        "dp": 0,
+                        "error": 0,
+                        "errors": Object {
+                          "fielding": 0,
+                          "interference": 0,
+                          "throwing": 0,
+                          "total": 0,
+                        },
+                        "fpct": 1,
+                        "games": Object {
+                          "complete": 0,
+                          "finish": 1,
+                          "play": 7,
+                          "start": 6,
+                        },
+                        "inn_1": 136,
+                        "inn_2": 45.1,
+                        "pb": 0,
+                        "po": 11,
+                        "position": "RF",
+                        "rf": 1.571,
+                        "steal": Object {
+                          "caught": 0,
+                          "pct": 0,
+                          "pickoff": 0,
+                          "stolen": 0,
+                        },
+                        "tc": 11,
+                        "tp": 0,
+                      },
+                    ],
+                  },
+                  "hitting": Object {
+                    "overall": Object {
+                      "ab": 17,
+                      "ab_risp": 1,
+                      "abhr": 0,
+                      "abk": 4.25,
+                      "ap": 21,
+                      "avg": ".235",
+                      "babip": 0.308,
+                      "bbk": 0.75,
+                      "bbpa": 0.143,
+                      "bip": 13,
+                      "flyball": 2,
+                      "games": Object {
+                        "complete": 4,
+                        "finish": 1,
+                        "play": 7,
+                        "start": 6,
+                      },
+                      "gofo": 1,
+                      "groundball": 5,
+                      "hit_risp": 0,
+                      "iso": 0.059,
+                      "linedrive": 5,
+                      "lob": 4,
+                      "lob_risp_2out": 0,
+                      "obp": 0.381,
+                      "onbase": Object {
+                        "bb": 2,
+                        "cycle": 0,
+                        "d": 1,
+                        "fc": 0,
+                        "h": 4,
+                        "hbp": 1,
+                        "hr": 0,
+                        "ibb": 1,
+                        "roe": 0,
+                        "s": 3,
+                        "t": 0,
+                        "tb": 5,
+                      },
+                      "ops": 0.675,
+                      "outcome": Object {
+                        "ball": 30,
+                        "dirtball": 4,
+                        "foul": 21,
+                        "iball": 0,
+                        "klook": 13,
+                        "kswing": 9,
+                        "ktotal": 22,
+                      },
+                      "outs": Object {
+                        "fidp": 0,
+                        "fo": 2,
+                        "gidp": 1,
+                        "go": 5,
+                        "klook": 1,
+                        "kswing": 3,
+                        "ktotal": 4,
+                        "lidp": 0,
+                        "lo": 2,
+                        "po": 1,
+                        "sacfly": 0,
+                        "sachit": 0,
+                      },
+                      "pitch_count": 91,
+                      "pitches": Object {
+                        "btotal": 35,
+                        "count": 91,
+                        "ktotal": 56,
+                      },
+                      "popup": 1,
+                      "rbi": 0,
+                      "rbi_2out": 0,
+                      "runs": Object {
+                        "total": 3,
+                      },
+                      "seca": 0.294,
+                      "slg": 0.294,
+                      "steal": Object {
+                        "caught": 0,
+                        "pct": 1,
+                        "pickoff": 0,
+                        "stolen": 1,
+                      },
+                      "team_lob": 0,
+                      "xbh": 1,
+                    },
+                  },
+                },
+              },
+            ],
+          }
+    }
+/>,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <div
+          className="left-container"
+>
+          <img
+                    className="sportsball-logo-side"
+                    src="logo_creme.svg"
+          />
+          <h2
+                    className="team-selected"
+          >
+                    Indians
+          </h2>
+          <Connect(TeamSelectSide) />
+</div>,
+        <div
+          className="orange-container"
+>
+          <h3
+                    className="talking-point"
+          >
+                    YOUR DAILY TALKING POINTS 
+                    <span
+                              className="light"
+                    >
+                               | 
+                    </span>
+                       
+                    2018/06/03
+          </h3>
+          <div
+                    className="talking-points-container"
+          >
+                    <ul
+                              className="u-list"
+                    >
+                              <li
+                                        className="point border-bottom"
+                              >
+                                        Wow, that game was sick! I can’t believe the Indians won 100 - 0!
+                              </li>
+                              <li
+                                        className="point border-bottom"
+                              >
+                                        Did you see that that play in the inning that scored 3?
+                              </li>
+                              <li
+                                        className="point"
+                              >
+                                        Lonnie Chisenhall is having great year hitting .235.
+                              </li>
+                    </ul>
+          </div>
+</div>,
+      ],
+      "className": "container",
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <img
+              className="sportsball-logo-side"
+              src="logo_creme.svg"
+/>,
+            <h2
+              className="team-selected"
+>
+              Indians
+</h2>,
+            <Connect(TeamSelectSide) />,
+          ],
+          "className": "left-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "className": "sportsball-logo-side",
+              "src": "logo_creme.svg",
+            },
+            "ref": null,
+            "rendered": null,
+            "type": "img",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": "Indians",
+              "className": "team-selected",
+            },
+            "ref": null,
+            "rendered": "Indians",
+            "type": "h2",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {},
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": Array [
+            <h3
+              className="talking-point"
+>
+              YOUR DAILY TALKING POINTS 
+              <span
+                            className="light"
+              >
+                             | 
+              </span>
+                 
+              2018/06/03
+</h3>,
+            <div
+              className="talking-points-container"
+>
+              <ul
+                            className="u-list"
+              >
+                            <li
+                                          className="point border-bottom"
+                            >
+                                          Wow, that game was sick! I can’t believe the Indians won 100 - 0!
+                            </li>
+                            <li
+                                          className="point border-bottom"
+                            >
+                                          Did you see that that play in the inning that scored 3?
+                            </li>
+                            <li
+                                          className="point"
+                            >
+                                          Lonnie Chisenhall is having great year hitting .235.
+                            </li>
+              </ul>
+</div>,
+          ],
+          "className": "orange-container",
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [
+                "YOUR DAILY TALKING POINTS ",
+                <span
+                  className="light"
+>
+                   | 
+</span>,
+                "   ",
+                "2018/06/03",
+              ],
+              "className": "talking-point",
+            },
+            "ref": null,
+            "rendered": Array [
+              "YOUR DAILY TALKING POINTS ",
+              Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": " | ",
+                  "className": "light",
+                },
+                "ref": null,
+                "rendered": " | ",
+                "type": "span",
+              },
+              "   ",
+              "2018/06/03",
+            ],
+            "type": "h3",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": <ul
+                className="u-list"
+>
+                <li
+                                className="point border-bottom"
+                >
+                                Wow, that game was sick! I can’t believe the Indians won 100 - 0!
+                </li>
+                <li
+                                className="point border-bottom"
+                >
+                                Did you see that that play in the inning that scored 3?
+                </li>
+                <li
+                                className="point"
+                >
+                                Lonnie Chisenhall is having great year hitting .235.
+                </li>
+</ul>,
+              "className": "talking-points-container",
+            },
+            "ref": null,
+            "rendered": Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  <li
+                    className="point border-bottom"
+>
+                    Wow, that game was sick! I can’t believe the Indians won 100 - 0!
+</li>,
+                  <li
+                    className="point border-bottom"
+>
+                    Did you see that that play in the inning that scored 3?
+</li>,
+                  <li
+                    className="point"
+>
+                    Lonnie Chisenhall is having great year hitting .235.
+</li>,
+                ],
+                "className": "u-list",
+              },
+              "ref": null,
+              "rendered": Array [
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Wow, that game was sick! I can’t believe the Indians won 100 - 0!",
+                    "className": "point border-bottom",
+                  },
+                  "ref": null,
+                  "rendered": "Wow, that game was sick! I can’t believe the Indians won 100 - 0!",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Did you see that that play in the inning that scored 3?",
+                    "className": "point border-bottom",
+                  },
+                  "ref": null,
+                  "rendered": "Did you see that that play in the inning that scored 3?",
+                  "type": "li",
+                },
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": "Lonnie Chisenhall is having great year hitting .235.",
+                    "className": "point",
+                  },
+                  "ref": null,
+                  "rendered": "Lonnie Chisenhall is having great year hitting .235.",
+                  "type": "li",
+                },
+              ],
+              "type": "ul",
+            },
+            "type": "div",
+          },
+        ],
+        "type": "div",
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <div
+            className="left-container"
+>
+            <img
+                        className="sportsball-logo-side"
+                        src="logo_creme.svg"
+            />
+            <h2
+                        className="team-selected"
+            >
+                        Indians
+            </h2>
+            <Connect(TeamSelectSide) />
+</div>,
+          <div
+            className="orange-container"
+>
+            <h3
+                        className="talking-point"
+            >
+                        YOUR DAILY TALKING POINTS 
+                        <span
+                                    className="light"
+                        >
+                                     | 
+                        </span>
+                           
+                        2018/06/03
+            </h3>
+            <div
+                        className="talking-points-container"
+            >
+                        <ul
+                                    className="u-list"
+                        >
+                                    <li
+                                                className="point border-bottom"
+                                    >
+                                                Wow, that game was sick! I can’t believe the Indians won 100 - 0!
+                                    </li>
+                                    <li
+                                                className="point border-bottom"
+                                    >
+                                                Did you see that that play in the inning that scored 3?
+                                    </li>
+                                    <li
+                                                className="point"
+                                    >
+                                                Lonnie Chisenhall is having great year hitting .235.
+                                    </li>
+                        </ul>
+            </div>
+</div>,
+        ],
+        "className": "container",
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <img
+                className="sportsball-logo-side"
+                src="logo_creme.svg"
+/>,
+              <h2
+                className="team-selected"
+>
+                Indians
+</h2>,
+              <Connect(TeamSelectSide) />,
+            ],
+            "className": "left-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "className": "sportsball-logo-side",
+                "src": "logo_creme.svg",
+              },
+              "ref": null,
+              "rendered": null,
+              "type": "img",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": "Indians",
+                "className": "team-selected",
+              },
+              "ref": null,
+              "rendered": "Indians",
+              "type": "h2",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "class",
+              "props": Object {},
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": Array [
+              <h3
+                className="talking-point"
+>
+                YOUR DAILY TALKING POINTS 
+                <span
+                                className="light"
+                >
+                                 | 
+                </span>
+                   
+                2018/06/03
+</h3>,
+              <div
+                className="talking-points-container"
+>
+                <ul
+                                className="u-list"
+                >
+                                <li
+                                                className="point border-bottom"
+                                >
+                                                Wow, that game was sick! I can’t believe the Indians won 100 - 0!
+                                </li>
+                                <li
+                                                className="point border-bottom"
+                                >
+                                                Did you see that that play in the inning that scored 3?
+                                </li>
+                                <li
+                                                className="point"
+                                >
+                                                Lonnie Chisenhall is having great year hitting .235.
+                                </li>
+                </ul>
+</div>,
+            ],
+            "className": "orange-container",
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [
+                  "YOUR DAILY TALKING POINTS ",
+                  <span
+                    className="light"
+>
+                     | 
+</span>,
+                  "   ",
+                  "2018/06/03",
+                ],
+                "className": "talking-point",
+              },
+              "ref": null,
+              "rendered": Array [
+                "YOUR DAILY TALKING POINTS ",
+                Object {
+                  "instance": null,
+                  "key": undefined,
+                  "nodeType": "host",
+                  "props": Object {
+                    "children": " | ",
+                    "className": "light",
+                  },
+                  "ref": null,
+                  "rendered": " | ",
+                  "type": "span",
+                },
+                "   ",
+                "2018/06/03",
+              ],
+              "type": "h3",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": <ul
+                  className="u-list"
+>
+                  <li
+                                    className="point border-bottom"
+                  >
+                                    Wow, that game was sick! I can’t believe the Indians won 100 - 0!
+                  </li>
+                  <li
+                                    className="point border-bottom"
+                  >
+                                    Did you see that that play in the inning that scored 3?
+                  </li>
+                  <li
+                                    className="point"
+                  >
+                                    Lonnie Chisenhall is having great year hitting .235.
+                  </li>
+</ul>,
+                "className": "talking-points-container",
+              },
+              "ref": null,
+              "rendered": Object {
+                "instance": null,
+                "key": undefined,
+                "nodeType": "host",
+                "props": Object {
+                  "children": Array [
+                    <li
+                      className="point border-bottom"
+>
+                      Wow, that game was sick! I can’t believe the Indians won 100 - 0!
+</li>,
+                    <li
+                      className="point border-bottom"
+>
+                      Did you see that that play in the inning that scored 3?
+</li>,
+                    <li
+                      className="point"
+>
+                      Lonnie Chisenhall is having great year hitting .235.
+</li>,
+                  ],
+                  "className": "u-list",
+                },
+                "ref": null,
+                "rendered": Array [
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Wow, that game was sick! I can’t believe the Indians won 100 - 0!",
+                      "className": "point border-bottom",
+                    },
+                    "ref": null,
+                    "rendered": "Wow, that game was sick! I can’t believe the Indians won 100 - 0!",
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Did you see that that play in the inning that scored 3?",
+                      "className": "point border-bottom",
+                    },
+                    "ref": null,
+                    "rendered": "Did you see that that play in the inning that scored 3?",
+                    "type": "li",
+                  },
+                  Object {
+                    "instance": null,
+                    "key": undefined,
+                    "nodeType": "host",
+                    "props": Object {
+                      "children": "Lonnie Chisenhall is having great year hitting .235.",
+                      "className": "point",
+                    },
+                    "ref": null,
+                    "rendered": "Lonnie Chisenhall is having great year hitting .235.",
+                    "type": "li",
+                  },
+                ],
+                "type": "ul",
+              },
+              "type": "div",
+            },
+          ],
+          "type": "div",
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+  },
+}
+`;

@@ -6,9 +6,8 @@ import { winningMessages, losingMessages } from '../../Helpers/talkingPointPhras
 import { firstTalkingPoint, secondTalkingPoint, thirdTalkingPoint } from '../../Helpers/talkingPointLogic';
 import TeamSelectSide from '../TeamSelectSide/TeamSelectSide';
 import logo from '../../Assets/images/logo_creme.svg';
-import indians from '../../Assets/images/indians.svg';
 
-const Main = (props) => {
+export const Main = (props) => {
   const date = yesterdaysDate();
   const thirdPhrase = thirdTalkingPoint(props.selectedTeam, props.teamStats);
   const secondPhrase = secondTalkingPoint(props.selectedTeam, props.singleBoxScore);

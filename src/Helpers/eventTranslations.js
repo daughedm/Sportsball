@@ -192,4 +192,4 @@ let slangSingle = ['base knock', 'sencillo', 'bleeder', 'single', 'lace', 'rip' 
 
 let slangDouble = ['gapper', 'double', 'lace', 'rip', 'frozen rope', 'two bagger' ]
 
-let slangTriple = ['three bagger', 'triple']
+let slangTriple = ['three bagger', 'triple', 'threefer']

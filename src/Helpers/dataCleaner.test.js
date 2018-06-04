@@ -8,10 +8,23 @@ import {
 import { mockSummaryData, mockBoxScoreData } from '../mockData/mockdata';
 
 
+const fixedDate = new Date('2018-02-28T09:39:59');
+
+Date = class extends Date {
+  constructor() {
+    super();
+
+    return fixedDate;
+  }
+};
+
 describe('dataCleaner', () => {
   describe('yesterdaysDate', () => {
-    it('should create', () => {
+    it('should return yesterdays date in year, month, day format', () => {
+      const actual = yesterdaysDate();
+      const expected = '2018/02/28';
 
+      expect(actual).toEqual(expected);
     })
   })
   describe('gameSummaryCleaner', () => {
