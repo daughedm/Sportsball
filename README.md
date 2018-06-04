@@ -1,6 +1,6 @@
-![Opening Page](./src/assets/images/homepage.png)
+![Opening Page](./src/Assets/images/homepage.png)
 
-![Main Page](./src/assets/images/mainpage.png)
+![Main Page](./src/Assets/images/mainpage.png)
 
 
 # SPORTSBALL
