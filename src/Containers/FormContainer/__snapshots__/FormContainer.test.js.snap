@@ -56,8 +56,9 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <img
-          className="sportsball-logo"
-          src="logo_creme.svg"
+          alt="Sportsball logo"
+          className="sportsball-logo animated zoomIn"
+          src="logo_creme_home-02.svg"
 />,
         <img
           alt="loading"
@@ -74,8 +75,9 @@ ShallowWrapper {
         "key": undefined,
         "nodeType": "host",
         "props": Object {
-          "className": "sportsball-logo",
-          "src": "logo_creme.svg",
+          "alt": "Sportsball logo",
+          "className": "sportsball-logo animated zoomIn",
+          "src": "logo_creme_home-02.svg",
         },
         "ref": null,
         "rendered": null,
@@ -105,8 +107,9 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <img
-            className="sportsball-logo"
-            src="logo_creme.svg"
+            alt="Sportsball logo"
+            className="sportsball-logo animated zoomIn"
+            src="logo_creme_home-02.svg"
 />,
           <img
             alt="loading"
@@ -123,8 +126,9 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "host",
           "props": Object {
-            "className": "sportsball-logo",
-            "src": "logo_creme.svg",
+            "alt": "Sportsball logo",
+            "className": "sportsball-logo animated zoomIn",
+            "src": "logo_creme_home-02.svg",
           },
           "ref": null,
           "rendered": null,

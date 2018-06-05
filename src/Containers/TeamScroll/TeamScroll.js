@@ -8,7 +8,7 @@ import { addSingleSummaryToStore, addSingleBoxScoreToStore, addTeamStatsToStore 
 import { teamStatsFetch } from '../../ApiCall/ApiCall';
 
 
-class TeamScroll extends Component {
+export class TeamScroll extends Component {
   constructor() {
     super();
     this.state = {

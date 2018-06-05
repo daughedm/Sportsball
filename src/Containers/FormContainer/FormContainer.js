@@ -7,9 +7,6 @@ import './FormContainer.css';
 import TeamSelect from '../TeamSelect/TeamSelect';
 
 export class FormContainer extends Component {
-  constructor(props) {
-    super();
-  }
   
   render() {
 
