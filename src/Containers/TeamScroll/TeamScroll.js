@@ -36,7 +36,6 @@ class TeamScroll extends Component {
   }
 
   render() {
-    console.log(mlbTeams)
     const teamList = mlbTeams.map(team => {
       const toggleClass = this.state.teamClicked === team.id ?  "selected-team" :  ''; 
       
@@ -44,8 +43,11 @@ class TeamScroll extends Component {
         <li 
           className={`${toggleClass} list-item`} 
           onClick={ this.handleTeamClick } 
-          id={team.id}> 
+          id={team.id}
+          key={team.id}
+        > 
           {team.teamName}
+          
         </li>)
     })
     return(
@@ -86,6 +88,13 @@ export const mapStateToProps = (state) => ({
 })
 
 TeamScroll.propTypes = {
+  gameSummaries: PropTypes.array,
+  boxScores: PropTypes.array,
+  selectedTeam: PropTypes.string,
+  handleBoxScore: PropTypes.func,
+  handleTeamStats: PropTypes.func,
+  handleGameSummary: PropTypes.func,
+  handleTeamSelect: PropTypes.func,
 
 }
 

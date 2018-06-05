@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import sportsballLogo from '../../Assets/images/logo_creme.svg';
+import sportsballLogo from '../../Assets/images/logo_creme_home-02.svg';
 import loading from '../../Assets/images/loading.gif';
 import './FormContainer.css';
 import TeamSelect from '../TeamSelect/TeamSelect';
@@ -15,7 +15,7 @@ export class FormContainer extends Component {
 
     return ( 
       <div className="form-container">
-        <img src={sportsballLogo} className="sportsball-logo"/>
+        <img src={sportsballLogo} className="sportsball-logo" alt="Sportsball logo"/>
         {
           !this.props.gameSummaries.length && !this.props.boxScores.length ? (
         <img className="loading" src={loading} alt="loading"/>
@@ -33,6 +33,8 @@ const mapStateToProps = (state) => ({
 })
 
 FormContainer.propTypes = {
+  gameSummaries: PropTypes.array,
+  boxScores: PropTypes.array
 
 }
 

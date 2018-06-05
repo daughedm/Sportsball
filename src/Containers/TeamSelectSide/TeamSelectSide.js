@@ -1,11 +1,5 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { connect } from 'react-redux';
-import { findGame, teamStatCleaner } from '../../Helpers/dataCleaner'
-import { addSelectedTeamToStore } from '../../Actions/userActions';
 import './TeamSelectSide.css';
-import { addSingleSummaryToStore, addSingleBoxScoreToStore, addTeamStatsToStore } from '../../Actions';
-import { teamStatsFetch } from '../../ApiCall/ApiCall';
 import TeamScroll from './../TeamScroll/TeamScroll';
 
 export class TeamSelectSide extends Component {
@@ -21,10 +15,6 @@ export class TeamSelectSide extends Component {
       </form>
     )
   }
-}
-
-TeamSelectSide.propTypes = {
-
 }
 
 export default TeamSelectSide

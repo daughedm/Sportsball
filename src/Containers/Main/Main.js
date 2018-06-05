@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
+import PropTypes from 'prop-types';
 import './Main.css';
 import { connect } from 'react-redux';
 import { yesterdaysDate } from '../../Helpers/dataCleaner';
-import { winningMessages, losingMessages } from '../../Helpers/talkingPointPhrases';
 import { firstTalkingPoint, secondTalkingPoint, thirdTalkingPoint } from '../../Helpers/talkingPointLogic';
 import TeamSelectSide from '../TeamSelectSide/TeamSelectSide';
-import logo from '../../Assets/images/logo_creme.svg';
+import logo from '../../Assets/images/logo_creme-02.svg';
 
 export const Main = (props) => {
   const date = yesterdaysDate();
@@ -16,7 +16,7 @@ export const Main = (props) => {
   return (
     <div className="container">
       <div className="left-container">
-        <img className="sportsball-logo-side" src={logo}/>
+        <img className="sportsball-logo-side" src={logo} alt="logo"/>
         <h2 className="team-selected">{props.selectedTeam}</h2>
         <TeamSelectSide />
       </div>
@@ -33,6 +33,13 @@ export const Main = (props) => {
       </div>
     </div>
   )
+}
+
+Main.propTypes = {
+  selectedTeam: PropTypes.string,
+  singleGameSummary: PropTypes.object,
+  singleBoxScore: PropTypes.object,
+  teamStats: PropTypes.object,
 }
 
 export const mapStateToProps = (state) => ({

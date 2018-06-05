@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Redirect, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import FormContainer from '../FormContainer/FormContainer';
 import Main from '../Main/Main';
-import { gameSummariesFetch, boxScoresFetch, teamStatsFetch } from '../../ApiCall/ApiCall';
+import { gameSummariesFetch, boxScoresFetch } from '../../ApiCall/ApiCall';
 import { gameSummaryCleaner, boxScoresCleaner } from '../../Helpers/dataCleaner';
 import { addSummariesToStore, addBoxScoresToStore, addTeamStatsToStore } from '../../Actions/mlbDataActions';
 
@@ -61,5 +62,12 @@ export const mapDispatchToProps = (dispatch) => ({
 export const mapStateToProps = (state) => ({
   selectedTeam: state.selectedTeam
 })
+
+App.propTypes = {
+  selectedTeam: PropTypes.string,
+  handleSummaries: PropTypes.func,
+  handleBoxScores: PropTypes.func,
+  handleTeamStats: PropTypes.func,
+}
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

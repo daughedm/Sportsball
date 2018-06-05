@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
 import './TeamSelect.css';
 import TeamScroll from './../TeamScroll/TeamScroll';
 
@@ -16,10 +15,6 @@ export class TeamSelect extends Component {
       </form>
     )
   }
-}
-
-TeamSelect.propTypes = {
-
 }
 
 export default TeamSelect
