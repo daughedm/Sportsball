@@ -17,10 +17,11 @@ export const Main = (props) => {
     <div className="container">
       <div className="left-container">
         < img className = "sportsball-logo-side animated fadeIn"
-        src = {
-          logo
-        }
-        alt = "logo" />
+          src = {
+            logo
+          }
+          alt = "logo"
+        />
         <h2 className = "team-selected" > {
           props.selectedTeam
         } </h2>
@@ -38,21 +39,21 @@ export const Main = (props) => {
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
 Main.propTypes = {
   selectedTeam: PropTypes.string,
   singleGameSummary: PropTypes.object,
   singleBoxScore: PropTypes.object,
   teamStats: PropTypes.object,
-}
+};
 
 export const mapStateToProps = (state) => ({
   selectedTeam: state.selectedTeam,
   singleGameSummary: state.singleGameSummary,
   singleBoxScore: state.singleBoxScore,
   teamStats: state.teamStats
-})
+});
 
-export default connect(mapStateToProps, null)(Main)
+export default connect(mapStateToProps, null)(Main);

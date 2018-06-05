@@ -15,8 +15,8 @@ describe('singleBoxScoreReducer', () => {
 
   it('should have an initial state', () => {
 
-    let expected = {}
-    expect(singleBoxScoreReducer(undefined, {})).toEqual(expected)
+    let expected = {};
+    expect(singleBoxScoreReducer(undefined, {})).toEqual(expected);
 
-  })
+  });
 });

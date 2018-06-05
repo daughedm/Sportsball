@@ -2,10 +2,10 @@ import {
   TeamScroll,
   mapDispatchToProps,
   mapStateToProps
-} from "./TeamScroll";
-import React from "react";
-import { shallow } from "enzyme";
-import { teamStatsFetch } from "./../../ApiCall/ApiCall";
+} from './TeamScroll';
+import React from 'react';
+import { shallow } from 'enzyme';
+import { teamStatsFetch } from './../../ApiCall/ApiCall';
 import {connect} from 'react-redux';
 import {
   mockCleanSummary,
@@ -29,28 +29,28 @@ describe('TeamScroll', () => {
     mockHandleBoxScore = jest.fn();
     mockHandleTeamStats = jest.fn();
     mockProps = {
-         selectedTeam: "Indians",
-         gameSummaries: [],
-         boxScores: []
-       }
+      selectedTeam: 'Indians',
+      gameSummaries: [],
+      boxScores: []
+    };
     
     wrapper = shallow( <TeamScroll 
-      handleTeamSelect={mockHandleTeamSelect}
-      handleGameSummary={mockHandleGameSummary}
-      handleBoxScore={mockHandleBoxScore}
-      handleTeamStats={mockHandleTeamStats}
-      {...mockProps}
-    /> );
-  })
+      handleTeamSelect={ mockHandleTeamSelect }
+      handleGameSummary={ mockHandleGameSummary }
+      handleBoxScore={ mockHandleBoxScore }
+      handleTeamStats={ mockHandleTeamStats }
+      { ...mockProps }
+                       /> );
+  });
 
 
-  it("should match the snapshot", () => {
+  it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("has a default state", () => {
+  it('has a default state', () => {
     let expected = {
-      teamClicked: ""
+      teamClicked: ''
     };
 
     expect(wrapper.state()).toEqual(expected);
@@ -62,7 +62,7 @@ describe('TeamScroll', () => {
     beforeEach(() => {
       mockEvent = {
         preventDefault: jest.fn()
-      }
+      };
     });
 
     it('should call handleTeamSelect', async () => {
@@ -72,20 +72,20 @@ describe('TeamScroll', () => {
       await wrapper.instance().handleTeamSubmit(mockEvent);
 
       expect(mockHandleTeamSelect).toHaveBeenCalledWith('papayas');
-    })
+    });
 
     it('should call handleBoxScore', async () => {
       await wrapper.instance().handleTeamSubmit(mockEvent);
 
       expect(mockHandleBoxScore).toHaveBeenCalled();
-    })
+    });
 
     it('should call handleGameSummary', async () => {
       await wrapper.instance().handleTeamSubmit(mockEvent);
 
       expect(mockHandleGameSummary).toHaveBeenCalled();
-    })
-  })
+    });
+  });
 
   describe('mapStateToProps', () => {
     it('should map the user to props', () => {
@@ -140,7 +140,7 @@ describe('TeamScroll', () => {
     });
 
     it('should call dispatch on handleTeamSelect with the correct params', () => {
-      const mockTeam = 'Indians'
+      const mockTeam = 'Indians';
       const mockDispatch = jest.fn();
       const mappedProps = mapDispatchToProps(mockDispatch);
       const mockAction = {
@@ -152,4 +152,4 @@ describe('TeamScroll', () => {
       expect(mockDispatch).toHaveBeenCalledWith(mockAction);
     });
   });
-})
+});

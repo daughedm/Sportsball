@@ -4,7 +4,7 @@ describe('userActions', () => {
   describe('addSelectedTeamToStore', () => {
     it('has a type of ADD_SUMMARIES', () => {
       
-      const teamData = "Indians";
+      const teamData = 'Indians';
       const actual = actions.addSelectedTeamToStore(teamData);
 
       expect(actual).toEqual({
@@ -13,4 +13,4 @@ describe('userActions', () => {
       });
     });
   });
-})
+});

@@ -11,7 +11,7 @@ import { addSummariesToStore, addBoxScoresToStore, addTeamStatsToStore } from '.
 export class App extends Component {
   
   componentDidMount() {
-    this.getData()
+    this.getData();
   }
 
   async getSummaries() {
@@ -39,19 +39,21 @@ export class App extends Component {
       <Switch>
         <Route 
           exact path='/'
-          render = {() => (
+          render = { () => (
             teamSelected ? 
               (<Redirect to = "/teampage"/>)
               :
               (<FormContainer/>))
-          }/>
+          }
+        />
         <Route 
           exact path="/teampage"
-          render = {() => (
+          render = { () => (
             !teamSelected ?
               (< Redirect to = "/"/>)  :
               (< Main />))
-          }/>
+          }
+        />
       </Switch >
     );
   }
@@ -68,13 +70,13 @@ export const mapDispatchToProps = (dispatch) => ({
 
 export const mapStateToProps = (state) => ({
   selectedTeam: state.selectedTeam
-})
+});
 
 App.propTypes = {
   selectedTeam: PropTypes.string,
   handleSummaries: PropTypes.func,
   handleBoxScores: PropTypes.func,
   handleTeamStats: PropTypes.func,
-}
+};
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(App));

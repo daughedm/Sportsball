@@ -1,6 +1,6 @@
-import { Main, mapStateToProps } from "./Main";
-import React from "react";
-import { shallow } from "enzyme";
+import { Main, mapStateToProps } from './Main';
+import React from 'react';
+import { shallow } from 'enzyme';
 import { connect } from 'react-redux';
 import { yesterdaysDate } from '../../Helpers/dataCleaner';
 import { winningMessages, losingMessages } from '../../Helpers/talkingPointPhrases';
@@ -30,15 +30,15 @@ describe('Main',() => {
     mockTeamStats= mockCleanTeamStats;
     
     wrapper = shallow(<Main 
-      selectedTeam={mockSelectedTeam}
-      singleGameSummary={mockSingleGameSummary}
-      singleBoxScore={mockSingleBoxScore}
-      teamStats={mockTeamStats}
-    /> );
-  })
+      selectedTeam={ mockSelectedTeam }
+      singleGameSummary={ mockSingleGameSummary }
+      singleBoxScore={ mockSingleBoxScore }
+      teamStats={ mockTeamStats }
+                      /> );
+  });
 
 
-  it("should match the snapshot", () => {
+  it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
-})
+});

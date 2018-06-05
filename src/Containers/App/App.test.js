@@ -5,7 +5,7 @@ import {
   mapDispatchToProps,
   mapStateToProps
 } from './App';
-import { shallow } from "enzyme";
+import { shallow } from 'enzyme';
 import { gameSummariesFetch, boxScoresFetch } from '../../ApiCall/ApiCall';
 import {
   mockCleanSummaries,
@@ -27,30 +27,30 @@ describe('App', () => {
 
   beforeEach(() => {
 
-      mockHandleSummaries = jest.fn();
-      mockHandleBoxScores = jest.fn();
-      mockHandleTeamStats = jest.fn();
-      mockProps = {
-        selectedTeam: "Indians"
-      }
-      wrapper = shallow( < App handleSummaries = {
-          mockHandleSummaries
-        }
-        handleBoxScores = {
-          mockHandleBoxScores
-        }
-        handleTeamStats = {
-          mockHandleTeamStats
-        } { ...mockProps
-        }
-        />, { disableLifeCycleMethods: true });
+    mockHandleSummaries = jest.fn();
+    mockHandleBoxScores = jest.fn();
+    mockHandleTeamStats = jest.fn();
+    mockProps = {
+      selectedTeam: 'Indians'
+    };
+    wrapper = shallow( < App handleSummaries = {
+      mockHandleSummaries
+    }
+      handleBoxScores = {
+      mockHandleBoxScores
+    }
+      handleTeamStats = {
+      mockHandleTeamStats
+    } { ...mockProps
+    }
+                       />, { disableLifeCycleMethods: true });
 
-        wrapperInst = wrapper.instance();
-        wrapperInst.gameSummariesFetch = jest.fn();
-        // wrapperInst.boxScoresFetch = jest.fn();
-      }); it('should match snapshot', () => {
-      expect(wrapper).toMatchSnapshot();
-    })
+    wrapperInst = wrapper.instance();
+    wrapperInst.gameSummariesFetch = jest.fn();
+    // wrapperInst.boxScoresFetch = jest.fn();
+  }); it('should match snapshot', () => {
+    expect(wrapper).toMatchSnapshot();
+  });
 
   describe('getSummaries', () => {
     it('getSummaries should call getSummaries on pageload', async () => {
@@ -58,7 +58,7 @@ describe('App', () => {
 
       expect(gameSummariesFetch).toHaveBeenCalled();
     });
-  })
+  });
 
   describe('mapDispatchToProps', () => {
     it('should call dispatch on handleSummaries with the correct params', () => {
@@ -97,5 +97,5 @@ describe('App', () => {
 
       expect(mockDispatch).toHaveBeenCalledWith(mockAction);
     });
-  })
-})
+  });
+});

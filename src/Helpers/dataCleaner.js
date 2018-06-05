@@ -3,7 +3,7 @@ const yesterdaysDate = () => {
   let oneDayTimeStamp = 1000 * 60 * 60 * 24;
   let diff = todayTimeStamp - oneDayTimeStamp;
   let yesterdayDate = new Date(diff);
-  let year = yesterdayDate.getFullYear()
+  let year = yesterdayDate.getFullYear();
   let month = yesterdayDate.getMonth() + 1;
   let day = yesterdayDate.getDate();
 
@@ -16,7 +16,7 @@ const yesterdaysDate = () => {
 
   let yesterdayString = year + '/' + month + '/' + day;
   return yesterdayString;
-}
+};
 
 const gameSummaryCleaner = (rawSummaryData) => {
   const cleanedSummary = rawSummaryData.league.games.map(ballGame => {
@@ -27,10 +27,10 @@ const gameSummaryCleaner = (rawSummaryData) => {
       awayTeamRuns: ballGame.game.away.runs,
       winningTeam: ballGame.game.home.runs > ballGame.game.away.runs ? ballGame.game.home.name : ballGame.game.away.name,
       losingTeam: ballGame.game.home.runs < ballGame.game.away.runs ? ballGame.game.home.name : ballGame.game.away.name
-    }
-  })
+    };
+  });
   return cleanedSummary;
-}
+};
 
 const boxScoresCleaner = (rawBoxScoresData) => {
   const cleanedBoxScores = rawBoxScoresData.league.games.map(ballgame => {
@@ -39,52 +39,52 @@ const boxScoresCleaner = (rawBoxScoresData) => {
       awayTeam: ballgame.game.away.name,
       homeTeamEvents: ballgame.game.home.events,
       awayTeamEvents: ballgame.game.home.events
-    }
-  })
+    };
+  });
   return cleanedBoxScores;
-} 
+}; 
 
 const findGame = (yourTeam, path) => {
   let singleGame = path.find(ballGame => {
-    return ballGame.homeTeam.includes(yourTeam) || ballGame.awayTeam.includes(yourTeam)
-  })
+    return ballGame.homeTeam.includes(yourTeam) || ballGame.awayTeam.includes(yourTeam);
+  });
   if (singleGame === undefined) {
-    singleGame = `The ${yourTeam} didn't play!`
+    singleGame = `The ${yourTeam} didn't play!`;
   }
   return singleGame;
-}
+};
 
 const teamStatCleaner = stats => {
   const teamStats = {};
   teamStats[stats.name] = stats.players;
 
-  return teamStats
-}
+  return teamStats;
+};
 
 const filterBatters = (teamStat, team) => {
   const onlyBatters = teamStat[team].filter(player => {
     return player.position !== 'P';
-  })
+  });
   return onlyBatters;
-}
+};
 
 const filterPitchers = (teamStat, team) => {
   const onlyPitchers = teamStat[team].filter(player => {
     return player.position === 'P';
-  })
+  });
   return onlyPitchers;
-}
+};
 
 
 const findHighestAvg = (batters) => {
   const sortedBatters = batters.sort((a, b) => b.statistics.hitting.overall.avg - a.statistics.hitting.overall.avg);
   return sortedBatters[0];
-}
+};
 
 const findMostWins = (pitchers) => {
   const sortedPitchers = pitchers.sort((a, b) => b.statistics.pitching.overall.games.win - a.statistics.pitching.overall.games.win);
-  return sortedPitchers[0]
-}
+  return sortedPitchers[0];
+};
 
 
 export { 

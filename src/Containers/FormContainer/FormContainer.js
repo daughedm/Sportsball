@@ -12,30 +12,30 @@ export class FormContainer extends Component {
 
     return ( 
       <div className="form-container">
-        <img src={sportsballLogo} className="sportsball-logo animated zoomIn" alt="Sportsball logo"/>
+        <img src={ sportsballLogo } className="sportsball-logo animated zoomIn" alt="Sportsball logo"/>
         {
           !this.props.gameSummaries.length && !this.props.boxScores.length ? (
-        <img className="loading" src={loading} alt="loading"/>
-      ) : (
-        < TeamSelect />
-      )}
+            <img className="loading" src={ loading } alt="loading"/>
+          ) : (
+            < TeamSelect />
+          )}
       </div>
-     )
+    );
   }
 }
 
 const mapStateToProps = (state) => ({
   gameSummaries: state.gameSummaries,
   boxScores: state.boxScores
-})
+});
 
 FormContainer.propTypes = {
   gameSummaries: PropTypes.array,
   boxScores: PropTypes.array
 
-}
+};
 
-export default connect(mapStateToProps, null)(FormContainer)
+export default connect(mapStateToProps, null)(FormContainer);
 
 
 
