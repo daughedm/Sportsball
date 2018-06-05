@@ -78,15 +78,6 @@ li a {
   color: #3C3C3A;
  }
 
-/* .list-item {
- padding: 15px 0 15px 0;
- height: 50px;
-} */
-
-/* .unordered-list :hover {
-  background-color: #ffe4db;
-} */
-
 ::-webkit-scrollbar {
   width: 8px;
   height: 8px;
