@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import { BrowserRouter as Router } from 'react-router-dom';
 import { Route, Redirect, Switch, withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
 import FormContainer from '../FormContainer/FormContainer';
@@ -36,16 +35,24 @@ export class App extends Component {
   render() { 
     const teamSelected = this.props.selectedTeam;
     
-    const teamSelectOrMain = !teamSelected ? (
-      <FormContainer />
-    ) : (
-      <Main />
-    );
-    
     return (
-      < Router >
-        { teamSelectOrMain }
-      </Router>
+      <Switch>
+        <Route 
+          exact path='/'
+          render = {() => (
+            teamSelected ? 
+              (<Redirect to = "/teampage"/>)
+              :
+              (<FormContainer/>))
+          }/>
+        <Route 
+          exact path="/teampage"
+          render = {() => (
+            !teamSelected ?
+              (< Redirect to = "/"/>)  :
+              (< Main />))
+          }/>
+      </Switch >
     );
   }
 }

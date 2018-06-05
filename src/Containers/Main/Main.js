@@ -20,10 +20,10 @@ export const Main = (props) => {
         src = {
           logo
         }
-        alt = "logo" / >
-        < h2 className = "team-selected" > {
+        alt = "logo" />
+        <h2 className = "team-selected" > {
           props.selectedTeam
-        } < /h2>
+        } </h2>
         <TeamSelectSide />
       </div>
       <div className="orange-container animated bounceInRight">

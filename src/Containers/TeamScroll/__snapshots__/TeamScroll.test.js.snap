@@ -7,7 +7,7 @@ ShallowWrapper {
   Symbol(enzyme.__unrendered__): <TeamScroll
     boxScores={Array []}
     gameSummaries={Array []}
-    handleBoxScores={[Function]}
+    handleBoxScore={[Function]}
     handleGameSummary={[Function]}
     handleTeamSelect={[Function]}
     handleTeamStats={[Function]}
