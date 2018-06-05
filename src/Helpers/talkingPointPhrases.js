@@ -11,11 +11,11 @@ const eventMessages = (yourTeam, event, inning, numberScored) => {
 }
 
 const batterMessages = (first, last, stat) => {
-  return [`${first} ${last} is having great year hitting ${stat}.`]
+  return [`${first} ${last} is having great year hitting ${stat}.`, `Can you believe ${first} ${last} is hitting ${stat}`, `${first} ${last} is having a career year hitting ${stat}.`, `${first} ${last}'s ${stat} average is best on the team.`, `I would never have guessed ${first} ${last} would be averaging ${stat}.`, `I hope ${first} ${last} can keep his ${stat} pace for the rest of the year.`]
 }
 
 const pitcherMessages = (first, last, stat) => {
-  return [`${first} ${last} is so good, he has ${stat} wins this year already.`]
+  return [`${first} ${last} is so good, he has ${stat} wins this year already.`, `${first} ${last} is shaving a great year with ${stat} wins.`, `${first} ${last} is the real deal with his ${stat} wins this year.`, `Do you think ${first} ${last} can win much more than his ${stat} wins?`]
 }
 
 export { winningMessages, losingMessages, eventMessages, batterMessages, pitcherMessages };

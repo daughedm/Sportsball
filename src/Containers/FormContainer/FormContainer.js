@@ -15,7 +15,7 @@ export class FormContainer extends Component {
 
     return ( 
       <div className="form-container">
-        <img src={sportsballLogo} className="sportsball-logo" alt="Sportsball logo"/>
+        <img src={sportsballLogo} className="sportsball-logo animated zoomIn" alt="Sportsball logo"/>
         {
           !this.props.gameSummaries.length && !this.props.boxScores.length ? (
         <img className="loading" src={loading} alt="loading"/>

@@ -16,11 +16,17 @@ export const Main = (props) => {
   return (
     <div className="container">
       <div className="left-container">
-        <img className="sportsball-logo-side" src={logo} alt="logo"/>
-        <h2 className="team-selected">{props.selectedTeam}</h2>
+        < img className = "sportsball-logo-side animated fadeIn"
+        src = {
+          logo
+        }
+        alt = "logo" / >
+        < h2 className = "team-selected" > {
+          props.selectedTeam
+        } < /h2>
         <TeamSelectSide />
       </div>
-      <div className="orange-container">
+      <div className="orange-container animated bounceInRight">
         <h3 className="talking-point" >YOUR DAILY TALKING POINTS <span className="light"> | </span>   {date} 
         </h3>
         < div className="talking-points-container" >
