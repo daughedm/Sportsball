@@ -17,7 +17,7 @@ const firstTalkingPoint = (yourTeam, mlbData) => {
     message = `The ${yourTeam} didn't play today!`;
   }
   return message;
-}
+};
 
 const secondTalkingPoint = (yourTeam, mlbData) => {
   let message;
@@ -26,46 +26,46 @@ const secondTalkingPoint = (yourTeam, mlbData) => {
 
   if (mlbData.homeTeam === yourTeam) {
     if (!mlbData.homeTeamEvents) {
-      message = 'That was such a boring game. Literally nothing eventful happened'
+      message = 'That was such a boring game. Literally nothing eventful happened';
     }
-    randomNumEvent = Math.floor(Math.random() * mlbData.homeTeamEvents.length)
+    randomNumEvent = Math.floor(Math.random() * mlbData.homeTeamEvents.length);
     let event = eventToSlang(eventCleaner(mlbData.homeTeamEvents[randomNumEvent].hitter_outcome));
     let inning = inningCleaner(mlbData.homeTeamEvents[randomNumEvent].inning);
     let runsScored = mlbData.homeTeamEvents[randomNumEvent].runners.length;
     message = eventMessages(yourTeam, event, inning, runsScored)[randNumMessage];
 
   } else if (mlbData.awayTeam === yourTeam) {
-     if (!mlbData.homawayTeamEvents) {
-       message = 'That was such a boring game. Literally nothing eventful happened'
-     }
-    randomNumEvent = Math.floor(Math.random() * mlbData.awayTeamEvents.length)
+    if (!mlbData.homawayTeamEvents) {
+      message = 'That was such a boring game. Literally nothing eventful happened';
+    }
+    randomNumEvent = Math.floor(Math.random() * mlbData.awayTeamEvents.length);
     let event = eventToSlang(eventCleaner(mlbData.awayTeamEvents[randomNumEvent].hitter_outcome));
     let inning = inningCleaner(mlbData.awayTeamEvents[randomNumEvent].inning);
     let runsScored = mlbData.awayTeamEvents[randomNumEvent].runners.length;
     message = eventMessages(yourTeam, event, inning, runsScored)[randNumMessage];
   } else {
-    message = `Talk about the weather or something, I dunno.`;
+    message = 'Talk about the weather or something, I dunno.';
   }
   return message;
-}
+};
 
 const thirdTalkingPoint = (yourTeam, teamStats) => {
   let message;
   let randomBatterNumber;
   let randomPitcherNumber;
-  let randNum = Math.floor(Math.random() * 2)
+  let randNum = Math.floor(Math.random() * 2);
   let bestBatter = findHighestAvg(filterBatters(teamStats, yourTeam));
   let bestPitcher = findMostWins(filterPitchers(teamStats, yourTeam));
 
   if(randNum < 1) {
     randomBatterNumber = Math.floor(Math.random() * batterMessages('x', 'x', 'x').length);
-    message = batterMessages(bestBatter.first_name, bestBatter.last_name, bestBatter.statistics.hitting.overall.avg)[randomBatterNumber]
+    message = batterMessages(bestBatter.first_name, bestBatter.last_name, bestBatter.statistics.hitting.overall.avg)[randomBatterNumber];
   } 
   else if(randNum >= 1) {
     randomPitcherNumber = Math.floor(Math.random() * pitcherMessages('x', 'x', 'x').length);
-    message = pitcherMessages(bestPitcher.first_name, bestPitcher.last_name, bestPitcher.statistics.pitching.overall.games.win)[randomPitcherNumber]
+    message = pitcherMessages(bestPitcher.first_name, bestPitcher.last_name, bestPitcher.statistics.pitching.overall.games.win)[randomPitcherNumber];
   }
-return message
-}
+  return message;
+};
 
 export { firstTalkingPoint, secondTalkingPoint, thirdTalkingPoint };

@@ -45,6 +45,6 @@ const teamStatsFetch = async (team) => {
   }
 
 
-}
+};
 
-export { gameSummariesFetch, boxScoresFetch, teamStatsFetch }
+export { gameSummariesFetch, boxScoresFetch, teamStatsFetch };

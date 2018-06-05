@@ -11,10 +11,10 @@ export class TeamSelectSide extends Component {
         type = "submit"
       >
         <h3 className = "form-header" > Switch Teams </h3> 
-          <TeamScroll />
+        <TeamScroll />
       </form>
-    )
+    );
   }
 }
 
-export default TeamSelectSide
+export default TeamSelectSide;

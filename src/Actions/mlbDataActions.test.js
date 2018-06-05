@@ -55,17 +55,17 @@ describe('mlbDataActions', () => {
     });
   });
 
-   describe('addTeamStatsToStore', () => {
-     it('has a type of ADD_TEAM_STATS', () => {
-       const teamStatsData = mockCleanTeamStats;
-       const actual = actions.addTeamStatsToStore(teamStatsData);
+  describe('addTeamStatsToStore', () => {
+    it('has a type of ADD_TEAM_STATS', () => {
+      const teamStatsData = mockCleanTeamStats;
+      const actual = actions.addTeamStatsToStore(teamStatsData);
 
-       expect(actual).toEqual({
-         type: 'ADD_TEAM_STATS',
-         teamStats: teamStatsData
-       });
-     });
-   });
-})
+      expect(actual).toEqual({
+        type: 'ADD_TEAM_STATS',
+        teamStats: teamStatsData
+      });
+    });
+  });
+});
 
 

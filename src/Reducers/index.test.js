@@ -14,25 +14,25 @@ const store = createStore(rootReducer);
 describe('rootReducer', () => {
   it('reducer should match the default state given an empty action', () => {
     expect(store.getState().gameSummaries).toEqual(gameSummariesReducer([], {}));
-  })
+  });
 
   it('reducer should match the default state given an empty action', () => {
     expect(store.getState().boxScores).toEqual(boxScoreReducer([], {}));
-  })
+  });
 
   it('reducer should match the default state given an empty action', () => {
     expect(store.getState().selectedTeam).toEqual(selectedTeamReducer('', {}));
-  })
+  });
 
   it('reducer should match the default state given an empty action', () => {
     expect(store.getState().singleGameSummary).toEqual(singleGameSummaryReducer({}, {}));
-  })
+  });
 
   it('reducer should match the default state given an empty action', () => {
     expect(store.getState().singleBoxScore).toEqual(singleBoxScoreReducer({}, {}));
-  })
+  });
 
   it('reducer should match the default state given an empty action', () => {
     expect(store.getState().teamStats).toEqual(teamStatsReducer({}, {}));
-  })
-} )
+  });
+} );

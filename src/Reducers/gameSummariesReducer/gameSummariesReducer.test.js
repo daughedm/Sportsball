@@ -15,8 +15,8 @@ describe('gameSummariesReducer', () => {
 
   it('should have an initial state', () => {
 
-    let expected = []
-    expect(gameSummariesReducer(undefined, {})).toEqual(expected)
+    let expected = [];
+    expect(gameSummariesReducer(undefined, {})).toEqual(expected);
 
-  })
+  });
 });

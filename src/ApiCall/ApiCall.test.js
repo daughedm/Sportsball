@@ -9,7 +9,7 @@ import { teamEndPoints } from './teamEndPoints';
 describe('ApiCall', () => {
   let date;
   describe('gameSummaryFetch', () => {
-     beforeEach(() => {
+    beforeEach(() => {
       date = yesterdaysDate();
       
       window.fetch = jest.fn().mockImplementation(() =>
@@ -25,11 +25,11 @@ describe('ApiCall', () => {
       await gameSummariesFetch();
 
       expect(window.fetch).toHaveBeenCalledWith(url);
-    })
+    });
 
     it('should return an object if status code is ok', async () => {
-     await expect(gameSummariesFetch()).resolves.toEqual(mockSummaryData);
-    })
+      await expect(gameSummariesFetch()).resolves.toEqual(mockSummaryData);
+    });
 
     it('should throw an error if status is not ok', async () => {
       window.fetch = jest.fn().mockImplementation(() =>
@@ -38,9 +38,9 @@ describe('ApiCall', () => {
         })
       );
 
-      await expect(gameSummariesFetch()).rejects.toEqual('Error on the catcher, could\'nt catch the data.')
-    })
-  })
+      await expect(gameSummariesFetch()).rejects.toEqual('Error on the catcher, could\'nt catch the data.');
+    });
+  });
 
   describe('boxScoreFetch', () => {
     beforeEach(() => {
@@ -52,19 +52,19 @@ describe('ApiCall', () => {
           json: () => Promise.resolve(mockBoxScoreData)
         })
       );
-    }) 
+    }); 
 
     it('should called with the correct params', async () => {
       let url = `http://api.sportradar.us/mlb/trial/v6.5/en/games/${date}/boxscore.json?api_key=${apiKey}`;
 
-       await boxScoresFetch();
+      await boxScoresFetch();
 
-       expect(window.fetch).toHaveBeenCalledWith(url);
-    })
+      expect(window.fetch).toHaveBeenCalledWith(url);
+    });
 
     it('should return an object if status code is ok', async () => {
       await expect(boxScoresFetch()).resolves.toEqual(mockBoxScoreData);
-    })
+    });
 
     it('should throw an error if status is not ok', async () => {
       window.fetch = jest.fn().mockImplementation(() =>
@@ -73,45 +73,45 @@ describe('ApiCall', () => {
         })
       );
 
-      await expect(boxScoresFetch()).rejects.toEqual('Error on the catcher, could\'nt catch the data.')
-    })
-  })
-describe('teamStatsFetch', () => {
-  let year;
-  let teamId;
-  beforeEach(() => {
-    year = 2018
-    teamId = '80715d0d-0d2a-450f-a970-1b9a3b18c7e7'
+      await expect(boxScoresFetch()).rejects.toEqual('Error on the catcher, could\'nt catch the data.');
+    });
+  });
+  describe('teamStatsFetch', () => {
+    let year;
+    let teamId;
+    beforeEach(() => {
+      year = 2018;
+      teamId = '80715d0d-0d2a-450f-a970-1b9a3b18c7e7';
 
-    window.fetch = jest.fn().mockImplementation(() =>
-      Promise.resolve({
-        status: 200,
-        json: () => Promise.resolve(mockTeamStatsData)
-      })
-    );
-  })
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          status: 200,
+          json: () => Promise.resolve(mockTeamStatsData)
+        })
+      );
+    });
 
-  it('should called with the correct params', async () => {
+    it('should called with the correct params', async () => {
     
-    let url = `http://api.sportradar.us/mlb/trial/v6.5/en/seasons/${year}/REG/teams/${teamId}/statistics.json?api_key=${apiKey}`;
+      let url = `http://api.sportradar.us/mlb/trial/v6.5/en/seasons/${year}/REG/teams/${teamId}/statistics.json?api_key=${apiKey}`;
 
-    await teamStatsFetch();
+      await teamStatsFetch();
 
-    expect(window.fetch).toHaveBeenCalledWith(url);
-  })
+      expect(window.fetch).toHaveBeenCalledWith(url);
+    });
 
-  it('should return an object if status code is ok', async () => {
-    await expect(teamStatsFetch()).resolves.toEqual(mockTeamStatsData);
-  })
+    it('should return an object if status code is ok', async () => {
+      await expect(teamStatsFetch()).resolves.toEqual(mockTeamStatsData);
+    });
 
-  it('should throw an error if status is not ok', async () => {
-    window.fetch = jest.fn().mockImplementation(() =>
-      Promise.resolve({
-        status: 500
-      })
-    );
+    it('should throw an error if status is not ok', async () => {
+      window.fetch = jest.fn().mockImplementation(() =>
+        Promise.resolve({
+          status: 500
+        })
+      );
 
-    await expect(teamStatsFetch()).rejects.toEqual('Error on the catcher, could\'nt catch the data.')
-  })
-})
-})
+      await expect(teamStatsFetch()).rejects.toEqual('Error on the catcher, could\'nt catch the data.');
+    });
+  });
+});

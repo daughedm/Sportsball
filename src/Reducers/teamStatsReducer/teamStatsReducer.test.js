@@ -2,7 +2,7 @@ import teamStatsReducer from './teamStatsReducer';
 
 describe('teamStatsReducer', () => {
   it('returns a object ADD_TEAM_STATS', () => {
-    const mockData = {Indians: {stats: 300}}
+    const mockData = {Indians: {stats: 300}};
     const initialState = {};
     const addTeamStatsToStore = {
       type: 'ADD_TEAM_STATS',
@@ -14,8 +14,8 @@ describe('teamStatsReducer', () => {
 
   it('should have an initial state', () => {
     
-    let expected = {}
-    expect(teamStatsReducer(undefined, {})).toEqual(expected)
+    let expected = {};
+    expect(teamStatsReducer(undefined, {})).toEqual(expected);
 
-  })
+  });
 });

@@ -33,11 +33,11 @@ describe('dataCleaner', () => {
       const expected = '2018/02/28';
 
       expect(actual).toEqual(expected);
-    })
-  })
+    });
+  });
   describe('gameSummaryCleaner', () => {
     it('should create an array of objects with home, away, winning, and runs', () => {
-      const actual = gameSummaryCleaner(mockSummaryData)
+      const actual = gameSummaryCleaner(mockSummaryData);
       const expected = [{
         homeTeam: 'White Sox',
         awayTeam: 'Orioles',
@@ -45,21 +45,21 @@ describe('dataCleaner', () => {
         awayTeamRuns: 9,
         winningTeam: 'Orioles',
         losingTeam: 'White Sox'
-      }]
+      }];
 
       expect(actual).toEqual(expected);
 
-    })
-  })
+    });
+  });
 
   describe('boxScoresCleaner', () => {
     it('should return an array cleaned box scores', () => {
       const actual = boxScoresCleaner(mockBoxScoreData);
-      const expected = mockFullCleanBoxScores
+      const expected = mockFullCleanBoxScores;
 
       expect(actual).toEqual(expected);
-    })
-  })
+    });
+  });
 
   describe('findGame', () => {
     it('should return a single game summary object', () => {
@@ -72,24 +72,24 @@ describe('dataCleaner', () => {
         awayTeamRuns: 0,
         winningTeam: 'Indians',
         losingTeam: 'Cubs'
-      }
+      };
 
-      expect(actual).toEqual(expected)
+      expect(actual).toEqual(expected);
 
-      })
+    });
 
-      it('should return a single boxscore object', () => {
-        const actual = findGame('Indians', mockedCleanBoxScores);
+    it('should return a single boxscore object', () => {
+      const actual = findGame('Indians', mockedCleanBoxScores);
 
-        const expected = {
-          homeTeam: 'Indians',
-          awayTeam: 'Cubs',
-          homeTeamEvents: [{runners:[1,2,3]},{runners:[1,2,3]}],
-          awayTeamEvents: [{},{}]
-        }
+      const expected = {
+        homeTeam: 'Indians',
+        awayTeam: 'Cubs',
+        homeTeamEvents: [{runners:[1,2,3]},{runners:[1,2,3]}],
+        awayTeamEvents: [{},{}]
+      };
 
-        expect(actual).toEqual(expected)
+      expect(actual).toEqual(expected);
 
-      })
-    })
-  })
+    });
+  });
+});

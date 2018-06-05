@@ -25,4 +25,4 @@ export {
   removeUserFromStore,
   addSeletectedTeamToStore,
   addTeamStatsToStore,
-}
+};

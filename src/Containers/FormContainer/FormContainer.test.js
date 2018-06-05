@@ -1,6 +1,6 @@
-import { FormContainer, mapStateToProps } from "./FormContainer";
-import React from "react";
-import { shallow } from "enzyme";
+import { FormContainer, mapStateToProps } from './FormContainer';
+import React from 'react';
+import { shallow } from 'enzyme';
 import { connect } from 'react-redux';
 import { yesterdaysDate } from '../../Helpers/dataCleaner';
 import { winningMessages, losingMessages } from '../../Helpers/talkingPointPhrases';
@@ -26,13 +26,13 @@ describe('FormContainer',() => {
     mockSingleBoxScore = mockCleanBoxScores;
     
     wrapper = shallow(<FormContainer 
-      gameSummaries={mockSingleGameSummary}
-      boxScores={mockSingleBoxScore}
-    /> );
-  })
+      gameSummaries={ mockSingleGameSummary }
+      boxScores={ mockSingleBoxScore }
+                      /> );
+  });
 
 
-  it("should match the snapshot", () => {
+  it('should match the snapshot', () => {
     expect(wrapper).toMatchSnapshot();
   });
-})
+});

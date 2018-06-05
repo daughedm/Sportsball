@@ -4,7 +4,7 @@ describe('selectedTeamReducer', () => {
   let mockSelectedTeam;
   beforeEach(() => {
     mockSelectedTeam = 'Indians';
-  })
+  });
   
   it('returns a state with a string with ADD_SELECTED_TEAM action', () => {
     const initialState = '';
@@ -19,8 +19,8 @@ describe('selectedTeamReducer', () => {
 
   it('should have an initial state', () => {
 
-    let expected = ""
-    expect(selectedTeamReducer(undefined, {})).toEqual(expected)
+    let expected = '';
+    expect(selectedTeamReducer(undefined, {})).toEqual(expected);
 
-  })
+  });
 });
