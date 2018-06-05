@@ -2,7 +2,7 @@
   list-style-type: none;
 }
 
-.scrollable-menu {
+/* .scrollable-menu {
   height: auto;
   max-height: 170px;
   overflow-x: hidden;
@@ -13,7 +13,7 @@
   background-color: #F4F1E7;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   padding: 0 20px 0 20px;
-}
+} */
 
 .side-form {
   width: 100%;
@@ -78,15 +78,14 @@ li a {
   color: #3C3C3A;
  }
 
-.list-item {
+/* .list-item {
  padding: 15px 0 15px 0;
  height: 50px;
- border-bottom: 1px solid #808080;
-}
+} */
 
-.unordered-list :hover {
+/* .unordered-list :hover {
   background-color: #ffe4db;
-}
+} */
 
 ::-webkit-scrollbar {
   width: 8px;

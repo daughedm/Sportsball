@@ -13,7 +13,7 @@
   margin-top: 25px;
   background-color: #F4F1E7;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
-  padding: 0 40px 0 20px;
+  padding: 0;
 }
 
 .login-form {
@@ -80,17 +80,19 @@ li a {
  }
 
 .list-item {
- padding: 15px 0 15px 0;
+ padding: 15px 25px;
  height: 50px;
- border-bottom: 1px solid #808080;
+  border-bottom: 1px solid #808080;
 }
 
 .unordered-list :hover {
-  background-color: #ffe4db;
+    color: #F4F1E7;
+    background-color: rgb(235, 144, 114);
 }
 
 .selected-team {
-  background-color: #ffe4db;
+  color: #F4F1E7;
+  background-color: rgb(235, 144, 114);
 }
 
 ::-webkit-scrollbar {
