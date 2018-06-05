@@ -1,5 +1,6 @@
 .unordered-list {
   list-style-type: none;
+  cursor: pointer;
 }
 
 .scrollable-menu {
@@ -85,6 +86,10 @@ li a {
 }
 
 .unordered-list :hover {
+  background-color: #ffe4db;
+}
+
+.selected-team {
   background-color: #ffe4db;
 }
 
