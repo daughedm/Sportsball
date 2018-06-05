@@ -1,6 +1,5 @@
 import apiKey from './apiKey';
 import { yesterdaysDate } from '../Helpers/dataCleaner';
-import { AssertionError } from 'assert';
 import { teamEndPoints } from './teamEndPoints';
 
 const gameSummariesFetch = async () => {

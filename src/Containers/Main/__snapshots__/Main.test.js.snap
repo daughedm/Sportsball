@@ -243,18 +243,21 @@ ShallowWrapper {
           className="left-container"
 >
           <img
-                    className="sportsball-logo-side"
-                    src="logo_creme.svg"
+                    alt="logo"
+                    className="sportsball-logo-side animated fadeIn"
+                    src="logo_creme-02.svg"
           />
           <h2
                     className="team-selected"
           >
+                     
                     Indians
+                     
           </h2>
-          <Connect(TeamSelectSide) />
+          <TeamSelectSide />
 </div>,
         <div
-          className="orange-container"
+          className="orange-container animated bounceInRight"
 >
           <h3
                     className="talking-point"
@@ -266,7 +269,7 @@ ShallowWrapper {
                                | 
                     </span>
                        
-                    2018/06/03
+                    2018/06/04
           </h3>
           <div
                     className="talking-points-container"
@@ -304,15 +307,18 @@ ShallowWrapper {
         "props": Object {
           "children": Array [
             <img
-              className="sportsball-logo-side"
-              src="logo_creme.svg"
+              alt="logo"
+              className="sportsball-logo-side animated fadeIn"
+              src="logo_creme-02.svg"
 />,
             <h2
               className="team-selected"
 >
+               
               Indians
+               
 </h2>,
-            <Connect(TeamSelectSide) />,
+            <TeamSelectSide />,
           ],
           "className": "left-container",
         },
@@ -323,8 +329,9 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "className": "sportsball-logo-side",
-              "src": "logo_creme.svg",
+              "alt": "logo",
+              "className": "sportsball-logo-side animated fadeIn",
+              "src": "logo_creme-02.svg",
             },
             "ref": null,
             "rendered": null,
@@ -335,11 +342,19 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "host",
             "props": Object {
-              "children": "Indians",
+              "children": Array [
+                " ",
+                "Indians",
+                " ",
+              ],
               "className": "team-selected",
             },
             "ref": null,
-            "rendered": "Indians",
+            "rendered": Array [
+              " ",
+              "Indians",
+              " ",
+            ],
             "type": "h2",
           },
           Object {
@@ -370,7 +385,7 @@ ShallowWrapper {
                              | 
               </span>
                  
-              2018/06/03
+              2018/06/04
 </h3>,
             <div
               className="talking-points-container"
@@ -396,7 +411,7 @@ ShallowWrapper {
               </ul>
 </div>,
           ],
-          "className": "orange-container",
+          "className": "orange-container animated bounceInRight",
         },
         "ref": null,
         "rendered": Array [
@@ -413,7 +428,7 @@ ShallowWrapper {
                    | 
 </span>,
                 "   ",
-                "2018/06/03",
+                "2018/06/04",
               ],
               "className": "talking-point",
             },
@@ -433,7 +448,7 @@ ShallowWrapper {
                 "type": "span",
               },
               "   ",
-              "2018/06/03",
+              "2018/06/04",
             ],
             "type": "h3",
           },
@@ -548,18 +563,21 @@ ShallowWrapper {
             className="left-container"
 >
             <img
-                        className="sportsball-logo-side"
-                        src="logo_creme.svg"
+                        alt="logo"
+                        className="sportsball-logo-side animated fadeIn"
+                        src="logo_creme-02.svg"
             />
             <h2
                         className="team-selected"
             >
+                         
                         Indians
+                         
             </h2>
-            <Connect(TeamSelectSide) />
+            <TeamSelectSide />
 </div>,
           <div
-            className="orange-container"
+            className="orange-container animated bounceInRight"
 >
             <h3
                         className="talking-point"
@@ -571,7 +589,7 @@ ShallowWrapper {
                                      | 
                         </span>
                            
-                        2018/06/03
+                        2018/06/04
             </h3>
             <div
                         className="talking-points-container"
@@ -609,15 +627,18 @@ ShallowWrapper {
           "props": Object {
             "children": Array [
               <img
-                className="sportsball-logo-side"
-                src="logo_creme.svg"
+                alt="logo"
+                className="sportsball-logo-side animated fadeIn"
+                src="logo_creme-02.svg"
 />,
               <h2
                 className="team-selected"
 >
+                 
                 Indians
+                 
 </h2>,
-              <Connect(TeamSelectSide) />,
+              <TeamSelectSide />,
             ],
             "className": "left-container",
           },
@@ -628,8 +649,9 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "className": "sportsball-logo-side",
-                "src": "logo_creme.svg",
+                "alt": "logo",
+                "className": "sportsball-logo-side animated fadeIn",
+                "src": "logo_creme-02.svg",
               },
               "ref": null,
               "rendered": null,
@@ -640,11 +662,19 @@ ShallowWrapper {
               "key": undefined,
               "nodeType": "host",
               "props": Object {
-                "children": "Indians",
+                "children": Array [
+                  " ",
+                  "Indians",
+                  " ",
+                ],
                 "className": "team-selected",
               },
               "ref": null,
-              "rendered": "Indians",
+              "rendered": Array [
+                " ",
+                "Indians",
+                " ",
+              ],
               "type": "h2",
             },
             Object {
@@ -675,7 +705,7 @@ ShallowWrapper {
                                  | 
                 </span>
                    
-                2018/06/03
+                2018/06/04
 </h3>,
               <div
                 className="talking-points-container"
@@ -701,7 +731,7 @@ ShallowWrapper {
                 </ul>
 </div>,
             ],
-            "className": "orange-container",
+            "className": "orange-container animated bounceInRight",
           },
           "ref": null,
           "rendered": Array [
@@ -718,7 +748,7 @@ ShallowWrapper {
                      | 
 </span>,
                   "   ",
-                  "2018/06/03",
+                  "2018/06/04",
                 ],
                 "className": "talking-point",
               },
@@ -738,7 +768,7 @@ ShallowWrapper {
                   "type": "span",
                 },
                 "   ",
-                "2018/06/03",
+                "2018/06/04",
               ],
               "type": "h3",
             },
