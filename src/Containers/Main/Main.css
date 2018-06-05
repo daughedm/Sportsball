@@ -67,9 +67,10 @@
 
 .team-selected {
   color: #F26F44;
+  font-family: 'Noto Serif', serif;
   font-size: 40px;
   text-align: center;
-  text-transform: uppercase;
+  letter-spacing: 2px;
   margin-top: 50px;
 }
 
