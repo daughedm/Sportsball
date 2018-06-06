@@ -11,7 +11,7 @@
   padding: 35px;
 }
 
-.form-header {
+/* .form-header {
   color: #F26F44;
   font-family: "Noto Sans";
   font-size: 25px;
@@ -19,7 +19,7 @@
   margin-top: 0;
   margin-bottom: 20px;
   letter-spacing: 1px;
-}
+} */
 
 .drop-down-button {
   display: block;
@@ -47,11 +47,11 @@
   cursor: pointer;
 }
 
-li a {
+/* li a {
   text-decoration: none;
   font-size: 16px;
   color: #3C3C3A;
- }
+ } */
 
 ::-webkit-scrollbar {
   width: 8px;

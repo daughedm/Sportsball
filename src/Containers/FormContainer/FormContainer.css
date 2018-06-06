@@ -4,10 +4,9 @@
 }
 
 .sportsball-logo {
-  width: 650px;
-  margin:140px auto 80px auto;
+  width: 600px;
+  margin:100px auto 80px auto;
   display: block;
-
 }
 
 .loading {
@@ -47,4 +46,13 @@
 .zoomIn {
   -webkit-animation-name: zoomIn;
   animation-name: zoomIn;
+}
+
+
+@media only screen and (max-width: 880px) {
+  .sportsball-logo {
+    width: 90%;
+    margin:40px auto 30px auto;
+  }
+
 }
