@@ -63,9 +63,9 @@
   cursor: pointer;
 }
 
-.submit-button :hover {
-    -webkit-animation-name: pulse;
-    animation-name: pulse;
+.submit-button:hover {
+  background: linear-gradient(0deg, rgb(238, 139, 107) 11%, 
+  rgb(241, 161, 134) 52%, rgb(245, 163, 136) 100%);
 }
 
 .anchor-toggle {
