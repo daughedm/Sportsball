@@ -9,7 +9,6 @@ describe('singleGameSummariesReducer', () => {
       summary: mockCleanSummary
     };
     let newState = singleGameSummaryReducer(initialState, addSingleSummaryToStore);
-    console.log(mockCleanSummary);
     expect(newState).toEqual(addSingleSummaryToStore.summary);
   });
 

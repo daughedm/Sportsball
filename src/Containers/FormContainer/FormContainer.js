@@ -30,8 +30,8 @@ const mapStateToProps = (state) => ({
 });
 
 FormContainer.propTypes = {
-  gameSummaries: PropTypes.array,
-  boxScores: PropTypes.array
+  gameSummaries: PropTypes.object,
+  boxScores: PropTypes.object
 
 };
 

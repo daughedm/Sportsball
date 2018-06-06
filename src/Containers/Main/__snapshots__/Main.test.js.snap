@@ -240,11 +240,11 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <div
-          className="left-container"
+          className="left-container animated fadeIn"
 >
           <img
                     alt="logo"
-                    className="sportsball-logo-side animated fadeIn"
+                    className="sportsball-logo-side"
                     src="logo_creme-02.svg"
           />
           <h2
@@ -257,7 +257,7 @@ ShallowWrapper {
           <TeamSelectSide />
 </div>,
         <div
-          className="orange-container animated bounceInRight"
+          className="orange-container animated fadeIn"
 >
           <h3
                     className="talking-point"
@@ -308,7 +308,7 @@ ShallowWrapper {
           "children": Array [
             <img
               alt="logo"
-              className="sportsball-logo-side animated fadeIn"
+              className="sportsball-logo-side"
               src="logo_creme-02.svg"
 />,
             <h2
@@ -320,7 +320,7 @@ ShallowWrapper {
 </h2>,
             <TeamSelectSide />,
           ],
-          "className": "left-container",
+          "className": "left-container animated fadeIn",
         },
         "ref": null,
         "rendered": Array [
@@ -330,7 +330,7 @@ ShallowWrapper {
             "nodeType": "host",
             "props": Object {
               "alt": "logo",
-              "className": "sportsball-logo-side animated fadeIn",
+              "className": "sportsball-logo-side",
               "src": "logo_creme-02.svg",
             },
             "ref": null,
@@ -411,7 +411,7 @@ ShallowWrapper {
               </ul>
 </div>,
           ],
-          "className": "orange-container animated bounceInRight",
+          "className": "orange-container animated fadeIn",
         },
         "ref": null,
         "rendered": Array [
@@ -560,11 +560,11 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <div
-            className="left-container"
+            className="left-container animated fadeIn"
 >
             <img
                         alt="logo"
-                        className="sportsball-logo-side animated fadeIn"
+                        className="sportsball-logo-side"
                         src="logo_creme-02.svg"
             />
             <h2
@@ -577,7 +577,7 @@ ShallowWrapper {
             <TeamSelectSide />
 </div>,
           <div
-            className="orange-container animated bounceInRight"
+            className="orange-container animated fadeIn"
 >
             <h3
                         className="talking-point"
@@ -628,7 +628,7 @@ ShallowWrapper {
             "children": Array [
               <img
                 alt="logo"
-                className="sportsball-logo-side animated fadeIn"
+                className="sportsball-logo-side"
                 src="logo_creme-02.svg"
 />,
               <h2
@@ -640,7 +640,7 @@ ShallowWrapper {
 </h2>,
               <TeamSelectSide />,
             ],
-            "className": "left-container",
+            "className": "left-container animated fadeIn",
           },
           "ref": null,
           "rendered": Array [
@@ -650,7 +650,7 @@ ShallowWrapper {
               "nodeType": "host",
               "props": Object {
                 "alt": "logo",
-                "className": "sportsball-logo-side animated fadeIn",
+                "className": "sportsball-logo-side",
                 "src": "logo_creme-02.svg",
               },
               "ref": null,
@@ -731,7 +731,7 @@ ShallowWrapper {
                 </ul>
 </div>,
             ],
-            "className": "orange-container animated bounceInRight",
+            "className": "orange-container animated fadeIn",
           },
           "ref": null,
           "rendered": Array [
