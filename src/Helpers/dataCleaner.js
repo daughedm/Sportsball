@@ -38,7 +38,7 @@ const boxScoresCleaner = (rawBoxScoresData) => {
       homeTeam: ballgame.game.home.name,
       awayTeam: ballgame.game.away.name,
       homeTeamEvents: ballgame.game.home.events,
-      awayTeamEvents: ballgame.game.home.events
+      awayTeamEvents: ballgame.game.away.events
     };
   });
   return cleanedBoxScores;
@@ -81,8 +81,18 @@ const findHighestAvg = (batters) => {
   return sortedBatters[0];
 };
 
+const findMostHR = (batters) => {
+  const sortedBatters = batters.sort((a, b) => b.statistics.hitting.overall.onbase.hr - a.statistics.hitting.overall.onbase.hr);
+  return sortedBatters[0];
+};
+
 const findMostWins = (pitchers) => {
   const sortedPitchers = pitchers.sort((a, b) => b.statistics.pitching.overall.games.win - a.statistics.pitching.overall.games.win);
+  return sortedPitchers[0];
+};
+
+const findLowestERA = (pitchers) => {
+  const sortedPitchers = pitchers.sort((a, b) => a.statistics.pitching.overall.era - b.statistics.pitching.overall.era);
   return sortedPitchers[0];
 };
 
@@ -96,5 +106,7 @@ export {
   filterBatters,
   filterPitchers,
   findHighestAvg,
-  findMostWins
+  findMostWins,
+  findMostHR,
+  findLowestERA
 };
